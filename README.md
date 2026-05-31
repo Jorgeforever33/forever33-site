@@ -112,8 +112,23 @@ https://forever33systems.com/
 La imagen configurada para WhatsApp, Facebook y Twitter/X es:
 
 ```text
-https://forever33systems.com/assets/pos-preview-ferreteria-ticket.png
+https://forever33systems.com/assets/forever33-og-image.png
 ```
+
+Archivo local:
+
+```text
+assets/forever33-og-image.png
+```
+
+Detalles:
+
+- Medida: `1200 x 630 px`.
+- Formato: PNG.
+- Peso aproximado: `176 KB`.
+- Uso: Open Graph y Twitter Card.
+- Composicion optimizada para miniaturas de WhatsApp, con margen seguro, titulo grande, mockup del POS y CTA de WhatsApp.
+
 
 `robots.txt` permite indexación y apunta a:
 
