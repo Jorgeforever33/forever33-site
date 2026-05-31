@@ -212,8 +212,8 @@ a {
 }
 
 .hero {
-  min-height: 620px;
-  padding: 64px 0 66px;
+  min-height: 604px;
+  padding: 58px 0 62px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e8eef6;
@@ -227,7 +227,7 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(520px, 1.1fr);
   align-items: center;
-  gap: 58px;
+  gap: 52px;
 }
 
 .hero-copy,
@@ -236,43 +236,43 @@ a {
 }
 
 .hero-copy h1 {
-  max-width: 560px;
+  max-width: 540px;
   margin: 0;
   color: #102033;
-  font-size: clamp(2.65rem, 4.05vw, 3.9rem);
+  font-size: clamp(2.55rem, 3.82vw, 3.65rem);
   font-weight: 900;
-  line-height: 1.03;
+  line-height: 1.045;
   letter-spacing: 0;
   text-wrap: balance;
 }
 
 .hero-copy p {
-  max-width: 535px;
-  margin: 22px 0 0;
+  max-width: 520px;
+  margin: 20px 0 0;
   color: #3b485b;
-  font-size: 1.08rem;
-  line-height: 1.72;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .trust-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 16px;
-  max-width: 610px;
+  gap: 10px 14px;
+  max-width: 585px;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 28px 0 0;
   color: #2e3d50;
   list-style: none;
 }
 
 .trust-list li {
   position: relative;
-  padding: 12px 12px 12px 38px;
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(216, 226, 239, 0.78);
+  padding: 10px 12px 10px 36px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(216, 226, 239, 0.7);
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(22, 45, 78, 0.04);
-  font-size: 0.92rem;
+  box-shadow: 0 6px 16px rgba(22, 45, 78, 0.03);
+  font-size: 0.89rem;
   font-weight: 700;
   overflow-wrap: anywhere;
 }
@@ -295,7 +295,7 @@ a {
 }
 
 .trust-list li::before {
-  top: 12px;
+  top: 10px;
   left: 12px;
 }
 
@@ -303,7 +303,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .hero-visual {
@@ -312,14 +312,14 @@ a {
 
 .device-stage {
   position: relative;
-  min-height: 446px;
-  padding-top: 12px;
+  min-height: 432px;
+  padding-top: 8px;
 }
 
 .laptop {
   position: relative;
   z-index: 2;
-  width: min(100%, 610px);
+  width: min(100%, 620px);
   margin-left: auto;
   padding-bottom: 46px;
 }
@@ -501,10 +501,10 @@ a {
 .phone-mockup {
   position: absolute;
   z-index: 4;
-  right: -2px;
-  bottom: 38px;
-  width: 168px;
-  min-height: 318px;
+  right: 0;
+  bottom: 36px;
+  width: 170px;
+  min-height: 320px;
   padding: 10px;
   color: #d9e7f8;
   background: #081626;
@@ -713,7 +713,7 @@ a {
 }
 
 .products {
-  padding-top: 54px;
+  padding-top: 50px;
   background:
     linear-gradient(180deg, var(--bg-soft), #fff 72%),
     linear-gradient(90deg, rgba(10, 99, 255, 0.04), rgba(19, 173, 88, 0.04));
@@ -722,8 +722,8 @@ a {
 .product-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.28fr) minmax(0, 0.92fr) minmax(0, 0.92fr);
-  gap: 20px;
-  margin-top: 36px;
+  gap: 18px;
+  margin-top: 34px;
 }
 
 .product-card {
@@ -750,22 +750,22 @@ a {
 }
 
 .product-card.featured {
-  min-height: 324px;
-  padding: 32px;
+  min-height: 314px;
+  padding: 30px;
   overflow: hidden;
   border-color: rgba(10, 99, 255, 0.26);
   background:
     linear-gradient(135deg, rgba(10, 99, 255, 0.08), rgba(19, 173, 88, 0.07) 58%, rgba(255, 255, 255, 0) 58%),
     #fff;
-  box-shadow: 0 22px 50px rgba(16, 32, 51, 0.12);
+  box-shadow: 0 20px 44px rgba(16, 32, 51, 0.105);
 }
 
 .product-card.featured::after {
   position: absolute;
   right: 22px;
   bottom: 18px;
-  width: 118px;
-  height: 118px;
+  width: 106px;
+  height: 106px;
   content: "";
   background: linear-gradient(135deg, rgba(10, 99, 255, 0.1), rgba(19, 173, 88, 0.08));
   border-radius: 50%;
@@ -787,7 +787,7 @@ a {
 
 .product-card.featured h3 {
   max-width: 260px;
-  font-size: 1.34rem;
+  font-size: 1.3rem;
 }
 
 .product-card p {
@@ -799,7 +799,7 @@ a {
 .product-card.featured p {
   max-width: 410px;
   color: #344257;
-  font-size: 1.01rem;
+  font-size: 0.99rem;
 }
 
 .product-card.soon p {
@@ -1540,7 +1540,7 @@ a {
 
   .hero-copy h1 {
     max-width: 720px;
-    font-size: clamp(2.35rem, 7.8vw, 3.75rem);
+    font-size: clamp(2.25rem, 7.2vw, 3.45rem);
   }
 
   .hero-copy p,
@@ -1553,7 +1553,7 @@ a {
   }
 
   .device-stage {
-    min-height: 500px;
+    min-height: 480px;
     padding-top: 0;
   }
 
@@ -1661,33 +1661,34 @@ a {
   }
 
   .hero {
-    padding-top: 42px;
-    padding-bottom: 48px;
+    padding-top: 34px;
+    padding-bottom: 42px;
   }
 
   .hero-copy h1 {
-    font-size: clamp(1.96rem, 9.1vw, 2.62rem);
+    font-size: clamp(1.9rem, 8.45vw, 2.45rem);
     line-height: 1.07;
   }
 
   .hero-copy p {
-    margin-top: 22px;
-    font-size: 1rem;
-    line-height: 1.72;
+    margin-top: 18px;
+    font-size: 0.98rem;
+    line-height: 1.66;
   }
 
   .trust-list {
     grid-template-columns: 1fr;
-    gap: 11px;
-    margin-top: 26px;
+    gap: 9px;
+    margin-top: 22px;
   }
 
   .trust-list li {
-    padding: 11px 12px 11px 38px;
+    padding: 10px 12px 10px 36px;
+    font-size: 0.88rem;
   }
 
   .trust-list li::before {
-    top: 11px;
+    top: 10px;
   }
 
   .screen {
@@ -1702,7 +1703,7 @@ a {
     bottom: auto;
     width: min(220px, 72vw);
     min-height: 310px;
-    margin: 24px auto 0;
+    margin: 18px auto 0;
   }
 
   .local-link {
@@ -1710,12 +1711,12 @@ a {
     right: auto;
     bottom: auto;
     width: 150px;
-    margin: 16px 0 0;
+    margin: 12px 0 0;
     margin-inline: auto;
   }
 
   .laptop {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
   }
 
   .laptop-base {
@@ -1768,7 +1769,7 @@ a {
   }
 
   .product-card.featured {
-    padding: 26px 24px;
+    padding: 25px 24px;
   }
 
   .product-card:hover,
