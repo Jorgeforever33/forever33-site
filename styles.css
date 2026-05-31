@@ -899,54 +899,101 @@ a {
 .product-preview {
   position: relative;
   overflow: hidden;
+  padding-top: 88px;
+  padding-bottom: 90px;
   background:
-    radial-gradient(circle at 14% 12%, rgba(32, 156, 157, 0.16), transparent 28%),
-    radial-gradient(circle at 86% 20%, rgba(212, 145, 39, 0.14), transparent 24%),
+    linear-gradient(180deg, rgba(244, 248, 252, 0.34), rgba(255, 255, 255, 0) 26%),
+    radial-gradient(circle at 14% 12%, rgba(32, 156, 157, 0.12), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(212, 145, 39, 0.1), transparent 23%),
     #fff;
 }
 
 .preview-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
-  gap: 34px;
+  grid-template-columns: minmax(280px, 0.76fr) minmax(0, 1.24fr);
+  gap: 42px;
   align-items: center;
+}
+
+.product-preview .section-head {
+  max-width: 520px;
+}
+
+.product-preview .section-label {
+  margin-bottom: 12px;
+}
+
+.product-preview .section-head h2 {
+  max-width: 500px;
+  font-size: clamp(2rem, 3.05vw, 2.82rem);
+}
+
+.product-preview .section-head p {
+  max-width: 500px;
+  margin-top: 18px;
+  font-size: 1.02rem;
+  line-height: 1.72;
 }
 
 .preview-points {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 10px 12px;
+  margin-top: 28px;
 }
 
 .preview-points span {
-  padding: 9px 12px;
-  color: #134b4b;
-  background: rgba(32, 156, 157, 0.1);
-  border: 1px solid rgba(32, 156, 157, 0.22);
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 8px 12px;
+  color: #174352;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(32, 156, 157, 0.2);
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 900;
+  box-shadow: 0 8px 20px rgba(22, 45, 78, 0.045);
 }
 
 .preview-frame {
   position: relative;
   margin: 0;
-  padding: 12px;
-  background: #ffffff;
-  border: 1px solid rgba(128, 150, 174, 0.34);
-  border-radius: var(--radius);
-  box-shadow: 0 24px 58px rgba(20, 36, 58, 0.15);
+  padding: 34px 12px 12px;
+  background:
+    linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(128, 150, 174, 0.26);
+  border-radius: 8px;
+  box-shadow: 0 22px 48px rgba(20, 36, 58, 0.13);
 }
 
 .preview-frame::before {
   position: absolute;
-  inset: -1px;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 0;
+  height: 30px;
   pointer-events: none;
   content: "";
-  border-radius: inherit;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background:
+    linear-gradient(90deg, rgba(10, 99, 255, 0.08), rgba(19, 173, 88, 0.08)),
+    #f4f8fc;
+  border-bottom: 1px solid rgba(216, 226, 239, 0.9);
+  border-radius: 8px 8px 0 0;
+}
+
+.preview-frame::after {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 1;
+  width: 38px;
+  height: 7px;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle, #13ad58 0 3px, transparent 3.5px) 0 0 / 13px 7px repeat-x;
 }
 
 .preview-frame img {
@@ -958,15 +1005,16 @@ a {
   object-fit: cover;
   object-position: top left;
   border: 1px solid rgba(128, 150, 174, 0.28);
-  border-radius: 8px;
+  border-radius: 7px;
+  box-shadow: 0 12px 26px rgba(20, 36, 58, 0.08);
 }
 
 .preview-frame figcaption {
   position: relative;
   z-index: 1;
-  margin: 12px 2px 2px;
+  margin: 13px 4px 2px;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   line-height: 1.45;
 }
 
@@ -1584,7 +1632,16 @@ a {
   }
 
   .preview-grid {
-    gap: 26px;
+    gap: 30px;
+  }
+
+  .product-preview {
+    padding-top: 72px;
+    padding-bottom: 76px;
+  }
+
+  .product-preview .section-head {
+    max-width: 720px;
   }
 
   .feature-row {
@@ -1752,11 +1809,22 @@ a {
   }
 
   .preview-frame {
-    padding: 8px;
+    padding: 30px 8px 8px;
   }
 
   .preview-frame img {
     aspect-ratio: 4 / 3;
+  }
+
+  .preview-points {
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .preview-points span {
+    min-height: 36px;
+    padding: 8px 11px;
+    font-size: 0.8rem;
   }
 
   .product-grid {
