@@ -1016,55 +1016,111 @@ a {
 }
 
 .download {
-  background: var(--bg-blue);
+  position: relative;
+  overflow: hidden;
+  padding: 78px 0 84px;
+  background:
+    linear-gradient(180deg, #f4f8fc 0%, var(--bg-blue) 38%, #f8fbff 100%),
+    radial-gradient(circle at 14% 28%, rgba(10, 99, 255, 0.1), transparent 28%),
+    radial-gradient(circle at 88% 64%, rgba(19, 173, 88, 0.1), transparent 24%);
+  border-top: 1px solid rgba(216, 226, 239, 0.72);
+  border-bottom: 1px solid rgba(216, 226, 239, 0.72);
 }
 
 .download-grid {
   display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
+  grid-template-columns: minmax(330px, 0.86fr) minmax(0, 1.14fr);
   align-items: center;
-  gap: 70px;
+  gap: 62px;
 }
 
 .product-box {
   position: relative;
-  min-height: 290px;
+  min-height: 330px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.product-box::before {
+  position: absolute;
+  inset: 22px 6px 18px;
+  z-index: -2;
+  content: "";
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.44)),
+    rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(156, 183, 221, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 22px 50px rgba(30, 53, 86, 0.1);
+}
+
+.product-box::after {
+  position: absolute;
+  inset: auto 42px 16px 52px;
+  z-index: -1;
+  height: 36px;
+  content: "";
+  background: radial-gradient(ellipse at center, rgba(16, 32, 51, 0.18), transparent 68%);
+  filter: blur(8px);
+}
+
+.package-status {
+  position: absolute;
+  top: 38px;
+  left: 34px;
+  z-index: 3;
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 7px 12px;
+  color: #0f8a47;
+  background: rgba(19, 173, 88, 0.1);
+  border: 1px solid rgba(19, 173, 88, 0.24);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .windows-mark {
   position: absolute;
-  left: 0;
-  top: 58px;
+  left: 38px;
+  top: 102px;
   display: grid;
-  grid-template-columns: repeat(2, 44px);
-  gap: 5px;
+  grid-template-columns: repeat(2, 38px);
+  gap: 6px;
+  filter: drop-shadow(0 12px 22px rgba(10, 99, 255, 0.18));
 }
 
 .windows-mark span {
-  width: 44px;
-  height: 44px;
-  background: var(--blue);
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, var(--blue), #2d7cff);
+  border-radius: 3px;
 }
 
 .box-art {
   position: relative;
-  width: 210px;
-  min-height: 265px;
-  margin-left: 112px;
-  padding: 118px 24px 24px;
+  width: 225px;
+  min-height: 282px;
+  margin-left: 84px;
+  padding: 122px 24px 24px;
   color: #fff;
   background:
     linear-gradient(160deg, rgba(6, 24, 49, 0.9), rgba(10, 99, 255, 0.68)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 34%),
     #0d2440;
-  border-radius: 6px;
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 24px 48px rgba(16, 32, 51, 0.22);
 }
 
 .box-art::before {
   position: absolute;
-  inset: 60px 0 auto;
-  height: 70px;
+  inset: 62px 0 auto;
+  height: 76px;
   content: "";
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
@@ -1088,7 +1144,7 @@ a {
 }
 
 .box-art strong {
-  font-size: 2.25rem;
+  font-size: 2.35rem;
   line-height: 1;
 }
 
@@ -1099,38 +1155,73 @@ a {
 
 .download-symbol {
   position: absolute;
-  right: 20px;
-  bottom: 18px;
+  right: 30px;
+  bottom: 46px;
   display: grid;
-  width: 78px;
-  height: 78px;
+  width: 74px;
+  height: 74px;
   place-items: center;
   color: #fff;
-  background: var(--blue);
-  border: 8px solid var(--bg-blue);
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border: 7px solid rgba(239, 246, 255, 0.94);
   border-radius: 50%;
+  box-shadow: 0 16px 28px rgba(10, 99, 255, 0.22);
 }
 
 .download-copy {
-  max-width: 650px;
+  max-width: 660px;
+  padding: 8px 0;
+}
+
+.download-copy .section-label {
+  color: var(--blue-dark);
+}
+
+.download-copy h2 {
+  max-width: 560px;
+}
+
+.download-copy p {
+  max-width: 620px;
 }
 
 .check-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 30px;
+  gap: 12px;
   margin-top: 28px;
 }
 
 .check-grid span {
   position: relative;
-  padding-left: 28px;
+  min-height: 52px;
+  padding: 14px 14px 14px 42px;
   color: #304057;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(156, 183, 221, 0.26);
+  border-radius: 8px;
   font-weight: 800;
+  box-shadow: 0 8px 20px rgba(30, 53, 86, 0.045);
+}
+
+.check-grid span::before {
+  top: 16px;
+  left: 14px;
 }
 
 .download-cta {
   margin-top: 32px;
+  min-width: 230px;
+  color: #fff;
+  background: var(--green);
+  border-color: var(--green);
+  box-shadow: 0 14px 28px rgba(19, 173, 88, 0.18);
+}
+
+.download-cta:hover {
+  color: #fff;
+  background: #0f9c4d;
+  border-color: #0f9c4d;
 }
 
 .license {
@@ -1722,6 +1813,15 @@ a {
     gap: 38px;
   }
 
+  .download {
+    padding: 68px 0 72px;
+  }
+
+  .product-box {
+    width: min(100%, 440px);
+    margin-inline: auto;
+  }
+
   .license-grid {
     align-items: start;
   }
@@ -1909,28 +2009,84 @@ a {
 
   .product-box {
     width: min(100%, 320px);
-    min-height: 250px;
+    min-height: 272px;
     margin-inline: auto;
   }
 
+  .product-box::before {
+    inset: 18px 0 14px;
+  }
+
+  .package-status {
+    top: 28px;
+    left: 18px;
+    min-height: 30px;
+    padding: 6px 10px;
+    font-size: 0.68rem;
+  }
+
   .windows-mark {
-    grid-template-columns: repeat(2, 34px);
-    top: 50px;
+    left: 22px;
+    top: 86px;
+    grid-template-columns: repeat(2, 30px);
+    gap: 5px;
   }
 
   .windows-mark span {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
   }
 
   .box-art {
-    width: 180px;
-    min-height: 230px;
-    margin-left: 82px;
+    width: 178px;
+    min-height: 222px;
+    margin-left: 72px;
+    padding: 98px 20px 20px;
+  }
+
+  .box-art::before {
+    inset: 51px 0 auto;
+    height: 58px;
+  }
+
+  .box-art img {
+    top: 20px;
+    left: 18px;
+    width: 112px;
+  }
+
+  .box-art strong {
+    font-size: 1.85rem;
+  }
+
+  .box-art span {
+    font-size: 1rem;
   }
 
   .download-symbol {
-    right: 6px;
+    right: 10px;
+    bottom: 34px;
+    width: 62px;
+    height: 62px;
+    border-width: 6px;
+  }
+
+  .check-grid {
+    gap: 10px;
+  }
+
+  .check-grid span {
+    min-height: 48px;
+    padding: 13px 12px 13px 40px;
+  }
+
+  .check-grid span::before {
+    top: 15px;
+    left: 13px;
+  }
+
+  .download-cta {
+    width: 100%;
   }
 
   .steps-grid article,
