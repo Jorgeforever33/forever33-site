@@ -1,0 +1,35 @@
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Variables privadas y archivos locales
+.env
+.env.*
+*.local
+
+# Dependencias, caches y builds accidentales
+node_modules/
+.cache/
+.parcel-cache/
+.wrangler/
+.netlify/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Notas internas que no deben publicarse
+RESUMEN_PROYECTO.md
+forever33-site-private/
+
+# Capturas temporales de QA
+*-before-*.png
+*-after-*.png
+*-qa-*.png

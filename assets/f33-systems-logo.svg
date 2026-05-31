@@ -1,0 +1,43 @@
+<svg width="1210" height="350" viewBox="60 40 1210 350" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">F33 Systems</title>
+  <desc id="desc">Logo horizontal F33 Systems con isotipo lineal azul petróleo, turquesa y detalle naranja.</desc>
+  <defs>
+    <linearGradient id="tealGradient" x1="206" y1="86" x2="372" y2="328" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1DB8A9"/>
+      <stop offset="1" stop-color="#079C8A"/>
+    </linearGradient>
+    <linearGradient id="numberGradient" x1="568" y1="126" x2="820" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08233A"/>
+      <stop offset="0.42" stop-color="#10AFA1"/>
+      <stop offset="1" stop-color="#0FA291"/>
+    </linearGradient>
+    <filter id="markShadow" x="70" y="40" width="390" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0B283C" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#markShadow)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M241 96H168C132 96 106 122 106 158V266C106 302 132 328 168 328H289" stroke="#06243A" stroke-width="18"/>
+    <path d="M241 328H292C326 328 351 303 351 269V161" stroke="url(#tealGradient)" stroke-width="18"/>
+    <path d="M144 278V151C144 134 156 122 173 122H277" stroke="#06243A" stroke-width="18"/>
+    <path d="M173 172H260" stroke="#06243A" stroke-width="18"/>
+    <path d="M173 217H232" stroke="#06243A" stroke-width="18"/>
+    <path d="M241 224H291C302 224 311 229 318 237L351 266" stroke="url(#tealGradient)" stroke-width="18"/>
+    <path d="M351 210V128" stroke="url(#tealGradient)" stroke-width="18"/>
+    <circle cx="351" cy="90" r="17" stroke="#19B3A5" stroke-width="14"/>
+    <circle cx="371" cy="177" r="17" stroke="#19B3A5" stroke-width="14"/>
+    <circle cx="264" cy="328" r="17" fill="white" stroke="#FF7A1A" stroke-width="12"/>
+  </g>
+
+  <text x="185" y="294" fill="#12AA9C" font-family="Arial Black, Montserrat, Poppins, Arial, sans-serif" font-size="84" font-weight="900">33</text>
+
+  <text x="505" y="240" fill="#06243A" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="118" font-weight="900">F</text>
+  <text x="608" y="240" fill="url(#numberGradient)" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="-4">33</text>
+  <text x="800" y="240" fill="#06243A" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="22">SYSTEMS</text>
+
+  <circle cx="512" cy="310" r="7" fill="#13AA9D"/>
+  <line x1="526" y1="310" x2="590" y2="310" stroke="#13AA9D" stroke-width="3"/>
+  <text x="612" y="320" fill="#102A3F" font-family="Montserrat, Poppins, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="9">SOLUCIONES QUE CONECTAN</text>
+  <line x1="1146" y1="310" x2="1206" y2="310" stroke="#FF7A1A" stroke-width="3"/>
+  <circle cx="1224" cy="310" r="7" fill="#FF7A1A"/>
+</svg>
