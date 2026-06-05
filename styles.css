@@ -1724,8 +1724,8 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr repeat(3, 1fr);
-  gap: 46px;
+  grid-template-columns: minmax(260px, 1.35fr) repeat(3, minmax(160px, 1fr));
+  gap: 38px;
   padding: 54px 0 36px;
 }
 
@@ -1737,13 +1737,41 @@ a {
 
 .footer p,
 .footer span,
+.footer small,
 .footer a {
   color: #b4c3d8;
 }
 
 .footer p {
-  max-width: 260px;
+  max-width: 340px;
+  margin: 14px 0 0;
+  color: #f5f9ff;
+  font-size: 1rem;
+  font-weight: 800;
   line-height: 1.7;
+}
+
+.footer-brand span {
+  display: block;
+  max-width: 390px;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.footer-brand small,
+.footer-contact span:last-child {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 30px;
+  align-items: center;
+  margin-top: 6px;
+  padding: 6px 10px;
+  color: #d9f8e8;
+  background: rgba(19, 173, 88, 0.1);
+  border: 1px solid rgba(19, 173, 88, 0.22);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .footer nav,
@@ -1766,13 +1794,28 @@ a {
   min-height: 36px;
   display: inline-flex;
   align-items: center;
+  overflow-wrap: anywhere;
 }
 
 .footer a:hover {
   color: #fff;
 }
 
-.copyright {
+.footer-contact a[href^="mailto:"],
+.footer-bottom a {
+  color: #eef6ff;
+  font-weight: 800;
+}
+
+.footer-contact span {
+  line-height: 1.55;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   padding: 18px 0 26px;
   color: #7f91a9;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -2386,8 +2429,22 @@ a {
     padding-top: 42px;
   }
 
+  .footer p {
+    max-width: none;
+  }
+
+  .footer-brand span {
+    max-width: none;
+  }
+
   .footer a {
     min-height: 44px;
+  }
+
+  .footer-bottom {
+    display: grid;
+    gap: 8px;
+    padding-bottom: 72px;
   }
 
   .floating-whatsapp {
