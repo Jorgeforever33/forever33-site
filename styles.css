@@ -866,6 +866,11 @@ a {
   transform: translateY(-1px);
 }
 
+.showcase-tab:focus-visible {
+  outline: 3px solid rgba(10, 99, 255, 0.28);
+  outline-offset: 3px;
+}
+
 .showcase-tab.is-active {
   color: #fff;
   background: linear-gradient(135deg, var(--blue), #147e9b);
@@ -1599,6 +1604,12 @@ a {
   font-size: 1rem;
   font-weight: 900;
   list-style: none;
+}
+
+.faq-list summary:focus-visible {
+  outline: 3px solid rgba(10, 99, 255, 0.26);
+  outline-offset: 4px;
+  border-radius: 8px;
 }
 
 .faq-list summary::-webkit-details-marker {
