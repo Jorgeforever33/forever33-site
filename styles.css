@@ -89,22 +89,22 @@ a {
 
 .nav {
   display: grid;
-  grid-template-columns: 210px 1fr auto;
+  grid-template-columns: 230px 1fr auto;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
   min-height: 76px;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  width: 210px;
+  width: 230px;
   min-width: 0;
 }
 
 .brand img {
   width: 100%;
-  max-height: 54px;
+  max-height: 58px;
   object-fit: contain;
   object-position: left center;
 }
@@ -1790,9 +1790,8 @@ a {
 }
 
 .footer img {
-  width: 190px;
+  width: 216px;
   max-width: 100%;
-  filter: brightness(0) invert(1);
 }
 
 .footer p,
@@ -1936,7 +1935,7 @@ a {
   }
 
   .brand {
-    width: min(174px, 62vw);
+    width: min(188px, 64vw);
   }
 
   .nav-toggle {
@@ -2154,7 +2153,7 @@ a {
   }
 
   .brand {
-    width: min(164px, 58vw);
+    width: min(176px, 57vw);
   }
 
   .hero-actions {
