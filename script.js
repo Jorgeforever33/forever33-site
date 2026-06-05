@@ -21,6 +21,30 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
   });
 });
 
+document.querySelectorAll("[data-showcase]").forEach((showcase) => {
+  const tabs = showcase.querySelectorAll("[data-showcase-tab]");
+  const panels = showcase.querySelectorAll("[data-showcase-panel]");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-showcase-tab");
+
+      tabs.forEach((item) => {
+        const isActive = item === tab;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-selected", String(isActive));
+        item.setAttribute("tabindex", isActive ? "0" : "-1");
+      });
+
+      panels.forEach((panel) => {
+        const isActive = panel.getAttribute("data-showcase-panel") === target;
+        panel.classList.toggle("is-active", isActive);
+        panel.hidden = !isActive;
+      });
+    });
+  });
+});
+
 const whatsappLinks = document.querySelectorAll("[data-whatsapp-link]");
 const cleanNumber = CONTACT.whatsappNumber.replace(/\D/g, "");
 

@@ -115,7 +115,7 @@
                   <strong>F33 POS Ferreterías</strong>
                 </div>
                 <img
-                  src="./assets/pos-preview-ferreteria-ticket.png"
+                  src="./assets/f33-pos-preview.png"
                   alt="Vista del POS Forever33 Systems con productos, ticket activo y cobro en mostrador"
                 />
                 <figcaption>Vista real de prueba del POS para mostrador.</figcaption>
@@ -216,31 +216,183 @@
       </section>
 
       <section class="product-preview section" id="vista-producto">
-        <div class="shell preview-grid">
-          <div class="section-head">
+        <div class="shell">
+          <div class="section-head centered showcase-head">
             <span class="section-label">Vista del producto</span>
-            <h2>Una pantalla de venta pensada para el mostrador</h2>
+            <h2>Un sistema completo para operar y vender mejor</h2>
             <p>
-              La captura muestra una vista real de prueba del POS: buscador, productos frecuentes, ticket activo y
-              medios de cobro en la misma operación.
+              Capturas reales de prueba del POS: ventas, productos, precios, reportes, clientes y exportadores
+              comerciales para trabajar desde PC y móviles dentro de la red local.
             </p>
+          </div>
 
-            <div class="preview-points" aria-label="Detalles destacados del POS">
-              <span>Búsqueda rápida</span>
-              <span>Ticket activo</span>
-              <span>Cobro en mostrador</span>
+          <div class="showcase" data-showcase>
+            <div class="showcase-tabs" role="tablist" aria-label="Módulos del POS">
+              <button class="showcase-tab is-active" type="button" role="tab" id="showcase-tab-pos" aria-controls="showcase-panel-pos" aria-selected="true" data-showcase-tab="pos">POS</button>
+              <button class="showcase-tab" type="button" role="tab" id="showcase-tab-productos" aria-controls="showcase-panel-productos" aria-selected="false" tabindex="-1" data-showcase-tab="productos">Productos</button>
+              <button class="showcase-tab" type="button" role="tab" id="showcase-tab-precios" aria-controls="showcase-panel-precios" aria-selected="false" tabindex="-1" data-showcase-tab="precios">Precios</button>
+              <button class="showcase-tab" type="button" role="tab" id="showcase-tab-reportes" aria-controls="showcase-panel-reportes" aria-selected="false" tabindex="-1" data-showcase-tab="reportes">Reportes</button>
+              <button class="showcase-tab" type="button" role="tab" id="showcase-tab-clientes" aria-controls="showcase-panel-clientes" aria-selected="false" tabindex="-1" data-showcase-tab="clientes">Clientes</button>
+              <button class="showcase-tab" type="button" role="tab" id="showcase-tab-exportadores" aria-controls="showcase-panel-exportadores" aria-selected="false" tabindex="-1" data-showcase-tab="exportadores">Exportadores</button>
+            </div>
+
+            <div class="showcase-panels">
+              <article class="showcase-panel is-active" id="showcase-panel-pos" role="tabpanel" aria-labelledby="showcase-tab-pos" data-showcase-panel="pos">
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Mostrador y cobro</span>
+                  <h3>Venta rápida con ticket activo</h3>
+                  <p>Buscá productos, armá el ticket y dejá el cobro listo para el mostrador. La vista móvil acompaña el uso dentro de la red local.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo POS">
+                    <span>Búsqueda rápida</span>
+                    <span>Ticket en vivo</span>
+                    <span>Cobro por método</span>
+                  </div>
+                </div>
+                <div class="showcase-media">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-pos-preview.png" alt="Captura del POS Forever33 Systems en escritorio con productos y ticket de venta" />
+                  </figure>
+                  <figure class="showcase-phone">
+                    <img src="./assets/f33-mobile-pos-preview.png" alt="Vista móvil del POS Forever33 Systems para operar en red local" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="showcase-panel" id="showcase-panel-productos" role="tabpanel" aria-labelledby="showcase-tab-productos" data-showcase-panel="productos" hidden>
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Inventario</span>
+                  <h3>Productos, stock y datos del local</h3>
+                  <p>Centralizá el catálogo, revisá stock, costos, precios de venta y alertas para mantener el mostrador ordenado.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo productos">
+                    <span>Stock visible</span>
+                    <span>Alertas de reposición</span>
+                    <span>Ficha de producto</span>
+                  </div>
+                </div>
+                <div class="showcase-media single">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-products-preview.png" alt="Captura del módulo de productos con inventario, precios y stock" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="showcase-panel" id="showcase-panel-precios" role="tabpanel" aria-labelledby="showcase-tab-precios" data-showcase-panel="precios" hidden>
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Listas comerciales</span>
+                  <h3>Precios para minoristas, mayoristas y promociones</h3>
+                  <p>Prepará listas comerciales y revisá valores para vender con más claridad, sin mezclar el trabajo de mostrador.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo precios">
+                    <span>Lista minorista</span>
+                    <span>Lista mayorista</span>
+                    <span>Catálogo para cliente</span>
+                  </div>
+                </div>
+                <div class="showcase-media single">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-prices-preview.png" alt="Captura del catálogo comercial con listas de precios y productos" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="showcase-panel" id="showcase-panel-reportes" role="tabpanel" aria-labelledby="showcase-tab-reportes" data-showcase-panel="reportes" hidden>
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Control del negocio</span>
+                  <h3>Reportes para revisar ventas, caja y stock</h3>
+                  <p>Consultá indicadores del día, movimientos, productos críticos y datos útiles para tomar decisiones con menos vueltas.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo reportes">
+                    <span>Resumen operativo</span>
+                    <span>Movimientos</span>
+                    <span>Vista móvil</span>
+                  </div>
+                </div>
+                <div class="showcase-media">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-reports-preview.png" alt="Captura del módulo de reportes con indicadores de ventas, caja y stock" />
+                  </figure>
+                  <figure class="showcase-phone">
+                    <img src="./assets/f33-mobile-reports-preview.png" alt="Vista móvil de reportes del POS Forever33 Systems" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="showcase-panel" id="showcase-panel-clientes" role="tabpanel" aria-labelledby="showcase-tab-clientes" data-showcase-panel="clientes" hidden>
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Clientes y cuentas</span>
+                  <h3>Clientes, deudas y cuenta corriente</h3>
+                  <p>Tené a mano datos comerciales, saldos, historial y acciones para atender mejor a minoristas y mayoristas.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo clientes">
+                    <span>Cuenta corriente</span>
+                    <span>Historial</span>
+                    <span>Mayoristas</span>
+                  </div>
+                </div>
+                <div class="showcase-media single">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-clients-preview.png" alt="Captura del módulo de clientes con cuenta corriente, historial y saldos" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="showcase-panel" id="showcase-panel-exportadores" role="tabpanel" aria-labelledby="showcase-tab-exportadores" data-showcase-panel="exportadores" hidden>
+                <div class="showcase-copy">
+                  <span class="showcase-kicker">Exportadores comerciales</span>
+                  <h3>Listas PDF y pedidos Excel para vender mejor</h3>
+                  <p>Prepará material comercial para enviar a clientes y organizar pedidos sin publicar descargas directas desde la web.</p>
+                  <div class="showcase-points" aria-label="Beneficios del módulo exportadores">
+                    <span>PDF comercial</span>
+                    <span>Pedido Excel</span>
+                    <span>Vista móvil</span>
+                  </div>
+                </div>
+                <div class="showcase-media">
+                  <figure class="showcase-frame">
+                    <img src="./assets/f33-commercial-exporter-preview.png" alt="Captura del exportador comercial para listas PDF y pedidos Excel" />
+                  </figure>
+                  <figure class="showcase-phone">
+                    <img src="./assets/f33-mobile-exporter-preview.png" alt="Vista móvil del exportador comercial Forever33 Systems" />
+                  </figure>
+                </div>
+              </article>
             </div>
           </div>
 
-          <figure class="preview-frame">
-            <img
-              src="./assets/pos-preview-ferreteria-ticket.png"
-              alt="Captura de prueba del POS para ferreterías con un producto cargado en el ticket de venta"
-            />
-            <figcaption>
-              Captura temporal del producto. La imagen final se actualizará cuando el sistema esté listo para presentar.
-            </figcaption>
-          </figure>
+          <div class="document-showcase" aria-label="Vistas de documentos comerciales generados">
+            <article class="document-card">
+              <div>
+                <span class="document-label">Lista PDF</span>
+                <h3>Catálogo comercial para compartir</h3>
+                <p>Vista previa visual de una lista comercial con productos, categorías y precios.</p>
+              </div>
+              <img src="./assets/f33-commercial-pdf-preview.png" alt="Vista previa de lista comercial PDF generada por Forever33 Systems" />
+            </article>
+
+            <article class="document-card">
+              <div>
+                <span class="document-label">Reporte PDF</span>
+                <h3>Resumen operativo imprimible</h3>
+                <p>Indicadores de ventas, caja y movimientos listos para revisar o guardar.</p>
+              </div>
+              <img src="./assets/f33-report-pdf-preview.png" alt="Vista previa de reporte PDF operativo generado por Forever33 Systems" />
+            </article>
+
+            <article class="document-card">
+              <div>
+                <span class="document-label">Pedido Excel</span>
+                <h3>Planilla para pedidos comerciales</h3>
+                <p>Ejemplo visual de pedido en Excel para trabajar con clientes y listas de precio.</p>
+              </div>
+              <img src="./assets/f33-excel-order-preview.png" alt="Vista previa de pedido comercial Excel generado por Forever33 Systems" />
+            </article>
+
+            <article class="document-card">
+              <div>
+                <span class="document-label">Pedidos</span>
+                <h3>Pedidos comerciales organizados</h3>
+                <p>Vista del módulo para revisar pedidos recibidos y seguir el estado comercial.</p>
+              </div>
+              <img src="./assets/f33-commercial-orders-preview.png" alt="Captura del módulo de pedidos comerciales de Forever33 Systems" />
+            </article>
+          </div>
         </div>
       </section>
 
