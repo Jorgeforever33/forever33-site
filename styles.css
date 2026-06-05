@@ -819,37 +819,66 @@ a {
 }
 
 .showcase {
+  position: relative;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(128, 150, 174, 0.22);
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 251, 255, 0.96)),
+    #fff;
+  border: 1px solid rgba(128, 150, 174, 0.26);
   border-radius: 8px;
-  box-shadow: 0 24px 56px rgba(20, 36, 58, 0.12);
+  box-shadow:
+    0 28px 64px rgba(20, 36, 58, 0.13),
+    0 1px 0 rgba(255, 255, 255, 0.88) inset;
+}
+
+.showcase::before {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 0;
+  height: 160px;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle at 18% 30%, rgba(10, 99, 255, 0.1), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(19, 173, 88, 0.1), transparent 30%);
 }
 
 .showcase-tabs {
+  position: relative;
+  z-index: 1;
   display: flex;
-  gap: 8px;
-  padding: 12px;
+  gap: 10px;
+  align-items: center;
+  padding: 14px;
   overflow-x: auto;
   background:
-    linear-gradient(90deg, rgba(10, 99, 255, 0.07), rgba(19, 173, 88, 0.06)),
-    #f7fbff;
-  border-bottom: 1px solid rgba(216, 226, 239, 0.92);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(244, 248, 252, 0.72)),
+    rgba(247, 251, 255, 0.94);
+  border-bottom: 1px solid rgba(190, 207, 229, 0.76);
   scrollbar-width: thin;
 }
 
 .showcase-tab {
-  min-height: 42px;
-  padding: 10px 15px;
-  color: #526071;
+  position: relative;
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 10px 16px;
+  color: #35445a;
   white-space: nowrap;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(128, 150, 174, 0.24);
+  appearance: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 249, 253, 0.9));
+  border: 1px solid rgba(128, 150, 174, 0.28);
   border-radius: 999px;
+  box-shadow:
+    0 8px 18px rgba(20, 36, 58, 0.05),
+    0 1px 0 rgba(255, 255, 255, 0.95) inset;
   font: inherit;
   font-size: 0.9rem;
   font-weight: 900;
+  line-height: 1;
   transition:
     color 0.2s ease,
     background 0.2s ease,
@@ -861,8 +890,11 @@ a {
 .showcase-tab:hover,
 .showcase-tab:focus-visible {
   color: var(--navy);
-  border-color: rgba(10, 99, 255, 0.28);
-  box-shadow: 0 10px 24px rgba(20, 36, 58, 0.08);
+  background: #fff;
+  border-color: rgba(10, 99, 255, 0.34);
+  box-shadow:
+    0 12px 26px rgba(20, 36, 58, 0.09),
+    0 1px 0 rgba(255, 255, 255, 0.95) inset;
   transform: translateY(-1px);
 }
 
@@ -873,22 +905,26 @@ a {
 
 .showcase-tab.is-active {
   color: #fff;
-  background: linear-gradient(135deg, var(--blue), #147e9b);
+  background: linear-gradient(135deg, var(--blue), #147e9b 72%, #13ad58);
   border-color: transparent;
-  box-shadow: 0 12px 28px rgba(10, 99, 255, 0.22);
+  box-shadow:
+    0 14px 30px rgba(10, 99, 255, 0.24),
+    0 1px 0 rgba(255, 255, 255, 0.24) inset;
 }
 
 .showcase-panels {
+  position: relative;
+  z-index: 1;
   background:
-    linear-gradient(180deg, #fff, #f8fbff);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(244, 248, 252, 0.88));
 }
 
 .showcase-panel {
   display: grid;
-  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
-  gap: 28px;
+  grid-template-columns: minmax(250px, 0.66fr) minmax(0, 1.34fr);
+  gap: 34px;
   align-items: center;
-  padding: 30px;
+  padding: 34px;
 }
 
 .showcase-panel[hidden] {
@@ -896,7 +932,7 @@ a {
 }
 
 .showcase-copy {
-  max-width: 410px;
+  max-width: 390px;
 }
 
 .showcase-kicker,
@@ -952,14 +988,24 @@ a {
 .showcase-media {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(132px, 0.22fr);
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 148px);
+  gap: 18px;
   align-items: end;
+  justify-self: end;
+  width: 100%;
+  max-width: 760px;
   min-width: 0;
+  padding: 10px;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(10, 99, 255, 0.08), transparent 34%),
+    radial-gradient(circle at 12% 78%, rgba(19, 173, 88, 0.08), transparent 32%);
+  border: 1px solid rgba(216, 226, 239, 0.7);
+  border-radius: 8px;
 }
 
 .showcase-media.single {
   grid-template-columns: 1fr;
+  max-width: 740px;
 }
 
 .showcase-frame,
@@ -975,6 +1021,7 @@ a {
 .showcase-frame {
   padding: 30px 10px 10px;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .showcase-frame::before {
@@ -1010,13 +1057,15 @@ a {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top left;
+  background: #f8fbff;
   border: 1px solid rgba(128, 150, 174, 0.28);
   border-radius: 6px;
 }
 
 .showcase-phone {
-  align-self: center;
-  width: min(164px, 100%);
+  align-self: end;
+  justify-self: end;
+  width: min(148px, 100%);
   padding: 9px;
   border-radius: 26px;
   box-shadow:
@@ -2013,6 +2062,8 @@ a {
 
   .showcase-media {
     grid-template-columns: minmax(0, 1fr) minmax(130px, 0.2fr);
+    justify-self: stretch;
+    max-width: 820px;
   }
 
   .document-showcase {
@@ -2207,6 +2258,7 @@ a {
   }
 
   .showcase-tabs {
+    gap: 8px;
     padding: 10px;
   }
 
@@ -2242,6 +2294,7 @@ a {
   .showcase-media {
     grid-template-columns: 1fr;
     gap: 14px;
+    padding: 8px;
   }
 
   .showcase-frame {
@@ -2249,7 +2302,7 @@ a {
   }
 
   .showcase-frame img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
   }
 
   .showcase-phone {
