@@ -2054,37 +2054,46 @@ a {
 
   .hero-actions {
     display: grid;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .hero-copy,
+  .hero-actions,
+  .trust-list {
+    max-width: min(100%, 360px);
   }
 
   .hero {
-    padding-top: 34px;
-    padding-bottom: 42px;
+    padding-top: 26px;
+    padding-bottom: 34px;
   }
 
   .hero-copy h1 {
-    font-size: clamp(1.9rem, 8.45vw, 2.45rem);
-    line-height: 1.07;
+    font-size: clamp(1.78rem, 7.8vw, 2.3rem);
+    line-height: 1.06;
   }
 
   .hero-copy p {
-    margin-top: 18px;
-    font-size: 0.98rem;
-    line-height: 1.66;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    line-height: 1.58;
+    overflow-wrap: break-word;
   }
 
   .trust-list {
     grid-template-columns: 1fr;
-    gap: 9px;
-    margin-top: 22px;
+    gap: 8px;
+    margin-top: 16px;
   }
 
   .trust-list li {
-    padding: 10px 12px 10px 36px;
-    font-size: 0.88rem;
+    padding: 9px 11px 9px 35px;
+    font-size: 0.84rem;
   }
 
   .trust-list li::before {
-    top: 10px;
+    top: 9px;
   }
 
   .phone-mockup {
@@ -2104,7 +2113,7 @@ a {
   }
 
   .app-window {
-    padding: 34px 8px 8px;
+    padding: 32px 8px 8px;
     border-radius: 10px;
   }
 
@@ -2136,7 +2145,7 @@ a {
   }
 
   .device-stage {
-    min-height: 430px;
+    min-height: 386px;
   }
 
   .showcase-head {
