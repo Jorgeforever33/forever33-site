@@ -1,7 +1,7 @@
 const CONTACT = {
   whatsappNumber: "5491151275465",
   whatsappMessage:
-    "Hola, quiero consultar por Forever33 Systems y el POS para ferreterías.",
+    "Hola, quiero consultar por Forever33 Systems y el POS para ferreterias y distribuidoras.",
 };
 
 const navToggle = document.querySelector(".nav-toggle");
