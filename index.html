@@ -35,15 +35,15 @@
     />
     <meta name="twitter:image" content="https://forever33systems.com/assets/forever33-og-image.png" />
     <meta name="twitter:image:alt" content="Forever33 Systems: software POS para comercios con ventas, stock, caja y reportes" />
-    <link rel="icon" href="./assets/forever33-systems-icon.svg" type="image/svg+xml" />
-    <link rel="preload" href="./assets/forever33-systems-logo.svg" as="image" />
+    <link rel="icon" href="./assets/brand/forever33-icon.png" type="image/png" />
+    <link rel="preload" href="./assets/brand/forever33-logo-horizontal.png" as="image" />
     <link rel="stylesheet" href="./styles.css?v=20260605-logo-size" />
   </head>
   <body>
     <header class="site-header" id="inicio">
       <nav class="nav shell" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="Forever33 Systems inicio">
-          <img src="./assets/forever33-systems-logo.svg" alt="Forever33 Systems" decoding="async" />
+          <img src="./assets/brand/forever33-logo-horizontal.png" alt="Forever33 Systems" decoding="async" />
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
@@ -114,9 +114,13 @@
                   <span></span>
                   <strong>F33 POS Ferreterías y distribuidoras</strong>
                 </div>
+                <!-- Reemplazo para screenshot principal -->
                 <img
-                  src="./assets/f33-pos-preview.png"
+                  class="hero-main-preview"
+                  src="./assets/captures/hero-pos-desktop.png"
                   alt="Vista del POS Forever33 Systems con productos, ticket activo y cobro en mostrador"
+                  data-asset="hero-desktop"
+                  loading="eager"
                   decoding="async"
                 />
                 <figcaption>Vista real de prueba del POS para mostrador.</figcaption>
@@ -129,23 +133,13 @@
 
               <div class="phone-mockup" aria-label="Vista del POS desde un móvil conectado a la red local">
                 <div class="phone-screen">
-                  <div class="phone-top">
-                    <strong>F33 POS</strong>
-                    <span>Conectado</span>
-                  </div>
-                  <div class="phone-total">
-                    <span>Total venta</span>
-                    <strong>$ 49.650</strong>
-                  </div>
-                  <div class="phone-actions">
-                    <span class="mock-button">Cobrar</span>
-                    <span class="mock-button">Stock</span>
-                  </div>
-                  <div class="phone-list">
-                    <p><span>Taladro</span><strong>1 u.</strong></p>
-                    <p><span>Disco corte</span><strong>2 u.</strong></p>
-                    <p><span>Tornillos</span><strong>5 u.</strong></p>
-                  </div>
+                  <img
+                    src="./assets/captures/hero-pos-mobile.png"
+                    alt="Vista movil real de F33 POS con modulos activos"
+                    data-asset="hero-mobile"
+                    loading="eager"
+                    decoding="async"
+                  />
                 </div>
               </div>
             </div>
@@ -251,10 +245,24 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-pos-preview.png" alt="Captura del POS Forever33 Systems en escritorio con productos y ticket de venta" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-pos.png"
+                      alt="Captura del POS Forever33 Systems en escritorio con productos y ticket de venta"
+                      data-showcase-desktop="pos"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                   <figure class="showcase-phone">
-                    <img src="./assets/f33-mobile-pos-preview.png" alt="Vista móvil del POS Forever33 Systems para operar en red local" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--mobile"
+                      src="./assets/captures/mobile-pos.png"
+                      alt="Vista móvil del POS Forever33 Systems para operar en red local"
+                      data-showcase-mobile="pos"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -272,7 +280,14 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-products-preview.png" alt="Captura del módulo de productos con inventario, precios y stock" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-productos.png"
+                      alt="Captura del módulo de productos con inventario, precios y stock"
+                      data-showcase-desktop="productos"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -290,7 +305,14 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-prices-preview.png" alt="Captura del catálogo comercial con listas de precios y productos" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-precios.png"
+                      alt="Captura del catálogo comercial con listas de precios y productos"
+                      data-showcase-desktop="precios"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -308,10 +330,24 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-reports-preview.png" alt="Captura del módulo de reportes con indicadores de ventas, caja y stock" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-reportes.png"
+                      alt="Captura del módulo de reportes con indicadores de ventas, caja y stock"
+                      data-showcase-desktop="reportes"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                   <figure class="showcase-phone">
-                    <img src="./assets/f33-mobile-reports-preview.png" alt="Vista móvil de reportes del POS Forever33 Systems" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--mobile"
+                      src="./assets/captures/mobile-stock.png"
+                      alt="Vista móvil de reportes del POS Forever33 Systems"
+                      data-showcase-mobile="reportes"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -329,7 +365,14 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-clients-preview.png" alt="Captura del módulo de clientes con cuenta corriente, historial y saldos" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-clientes.png"
+                      alt="Captura del módulo de clientes con cuenta corriente, historial y saldos"
+                      data-showcase-desktop="clientes"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -347,10 +390,24 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img src="./assets/f33-commercial-exporter-preview.png" alt="Captura del exportador comercial para listas PDF y pedidos Excel" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--desktop"
+                      src="./assets/captures/showcase-exportadores.png"
+                      alt="Captura del exportador comercial para listas PDF y pedidos Excel"
+                      data-showcase-desktop="exportadores"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                   <figure class="showcase-phone">
-                    <img src="./assets/f33-mobile-exporter-preview.png" alt="Vista móvil del exportador comercial Forever33 Systems" loading="lazy" decoding="async" />
+                    <img
+                      class="showcase-image showcase-image--mobile"
+                      src="./assets/captures/mobile-catalogo.png"
+                      alt="Vista móvil del exportador comercial Forever33 Systems"
+                      data-showcase-mobile="exportadores"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </figure>
                 </div>
               </article>
@@ -364,7 +421,14 @@
                 <h3>Catálogo comercial para compartir</h3>
                 <p>Salida prevista en desarrollo para compartir productos, categorías y precios con clientes.</p>
               </div>
-              <img src="./assets/f33-commercial-pdf-preview.png" alt="Vista previa de lista comercial PDF generada por Forever33 Systems" loading="lazy" decoding="async" />
+              <img
+                class="document-preview-image"
+                src="./assets/captures/document-lista-pdf.png"
+                alt="Vista previa de lista comercial PDF generada por Forever33 Systems"
+                data-document-preview="commercial-pdf"
+                loading="lazy"
+                decoding="async"
+              />
             </article>
 
             <article class="document-card">
@@ -373,7 +437,14 @@
                 <h3>Resumen operativo imprimible</h3>
                 <p>Vista de desarrollo para revisar ventas, caja y movimientos cuando el producto esté listo.</p>
               </div>
-              <img src="./assets/f33-report-pdf-preview.png" alt="Vista previa de reporte PDF operativo generado por Forever33 Systems" loading="lazy" decoding="async" />
+              <img
+                class="document-preview-image"
+                src="./assets/captures/showcase-reportes.png"
+                alt="Vista previa de reporte PDF operativo generado por Forever33 Systems"
+                data-document-preview="report-pdf"
+                loading="lazy"
+                decoding="async"
+              />
             </article>
 
             <article class="document-card">
@@ -382,7 +453,14 @@
                 <h3>Planilla para pedidos comerciales</h3>
                 <p>Salida prevista para organizar pedidos de clientes, mayoristas y listas de precio.</p>
               </div>
-              <img src="./assets/f33-excel-order-preview.png" alt="Vista previa de pedido comercial Excel generado por Forever33 Systems" loading="lazy" decoding="async" />
+              <img
+                class="document-preview-image"
+                src="./assets/captures/document-pedido-excel.png"
+                alt="Vista previa de pedido comercial Excel generado por Forever33 Systems"
+                data-document-preview="order-excel"
+                loading="lazy"
+                decoding="async"
+              />
             </article>
 
             <article class="document-card">
@@ -391,7 +469,14 @@
                 <h3>Pedidos comerciales organizados</h3>
                 <p>Vista de desarrollo para revisar pedidos recibidos y seguir el estado comercial de una distribuidora.</p>
               </div>
-              <img src="./assets/f33-commercial-orders-preview.png" alt="Captura del módulo de pedidos comerciales de Forever33 Systems" loading="lazy" decoding="async" />
+              <img
+                class="document-preview-image"
+                src="./assets/captures/showcase-exportadores.png"
+                alt="Captura del módulo de pedidos comerciales de Forever33 Systems"
+                data-document-preview="commercial-orders"
+                loading="lazy"
+                decoding="async"
+              />
             </article>
           </div>
         </div>
