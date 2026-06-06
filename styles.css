@@ -416,6 +416,7 @@ a {
   width: 174px;
   min-height: 284px;
   padding: 8px;
+  overflow: hidden;
   color: #d9e7f8;
   background:
     linear-gradient(180deg, #0b1b2e, #081626);
@@ -428,12 +429,16 @@ a {
 
 .phone-screen {
   display: grid;
+  width: 100%;
   gap: 10px;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .phone-screen img {
   display: block;
   width: 100%;
+  max-height: 285px;
   aspect-ratio: 472 / 862;
   object-fit: contain;
   object-position: center;
