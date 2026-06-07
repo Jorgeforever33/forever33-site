@@ -1183,6 +1183,40 @@ a {
   border-radius: 6px;
 }
 
+.document-card.document-card--text {
+  grid-template-columns: 1fr;
+  align-items: start;
+  min-height: 220px;
+}
+
+.document-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.document-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.document-list li::before {
+  position: absolute;
+  top: 0.58em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: var(--green);
+  border-radius: 999px;
+}
+
 .features {
   padding-top: 70px;
 }
@@ -1415,6 +1449,17 @@ a {
 .box-art span {
   margin-top: 4px;
   font-size: 1.15rem;
+}
+
+.box-art .box-brand {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .download-symbol {
@@ -1828,6 +1873,14 @@ a {
 .footer img {
   width: 216px;
   max-width: 100%;
+}
+
+.footer-brand img {
+  width: min(216px, 100%);
+  padding: 8px 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
 }
 
 .footer p,
