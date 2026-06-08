@@ -1941,6 +1941,67 @@ section[id] {
   color: #fff;
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  border: 1px solid rgba(156, 183, 221, 0.28);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-link svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.social-link span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.social-link:hover {
+  transform: translateY(-1px);
+}
+
+.contact-actions .social-links {
+  width: 100%;
+}
+
+.contact-actions .social-link {
+  flex: 1 1 128px;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-actions .social-link:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
 .footer {
   color: #d9e5f6;
   background: var(--navy);
@@ -1990,7 +2051,7 @@ section[id] {
 }
 
 .footer-brand small,
-.footer-contact span:last-child {
+.footer-contact > span:last-child {
   display: inline-flex;
   width: fit-content;
   min-height: 30px;
@@ -2040,6 +2101,23 @@ section[id] {
 
 .footer-contact span {
   line-height: 1.55;
+}
+
+.footer .social-links {
+  margin-top: 2px;
+}
+
+.footer .social-link {
+  min-height: 36px;
+  color: #d9e5f6;
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.footer .social-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.24);
 }
 
 .footer-bottom {
