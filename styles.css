@@ -1136,6 +1136,15 @@ section[id] {
   background: #f8fbff;
 }
 
+.document-preview {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #f8fbff;
+  border: 1px solid rgba(128, 150, 174, 0.18);
+  border-radius: 6px;
+}
+
 .document-showcase {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1185,6 +1194,18 @@ section[id] {
   object-position: top left;
   border: 1px solid rgba(128, 150, 174, 0.24);
   border-radius: 6px;
+}
+
+.document-card.document-card--preview {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.document-card.document-card--preview img {
+  aspect-ratio: 16 / 10;
+  object-position: top center;
+  border: 0;
+  border-radius: 0;
 }
 
 .document-card.document-card--text {
@@ -1342,6 +1363,10 @@ section[id] {
   isolation: isolate;
 }
 
+.product-box--screenshot {
+  min-height: 340px;
+}
+
 .product-box::before {
   position: absolute;
   inset: 22px 6px 18px;
@@ -1462,6 +1487,29 @@ section[id] {
   font-size: 0.78rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.launcher-preview {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 268px);
+  margin: 0 0 0 72px;
+  padding: 10px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 251, 255, 0.96));
+  border: 1px solid rgba(128, 150, 174, 0.24);
+  border-radius: 8px;
+  box-shadow: 0 24px 48px rgba(16, 32, 51, 0.18);
+}
+
+.launcher-preview img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 708 / 752;
+  object-fit: contain;
+  object-position: center;
+  background: #f8fbff;
+  border-radius: 6px;
 }
 
 .download-symbol {
@@ -2625,6 +2673,10 @@ section[id] {
     margin-inline: auto;
   }
 
+  .product-box--screenshot {
+    min-height: 300px;
+  }
+
   .product-box::before {
     inset: 18px 0 14px;
   }
@@ -2654,6 +2706,12 @@ section[id] {
     min-height: 222px;
     margin-left: 72px;
     padding: 98px 20px 20px;
+  }
+
+  .launcher-preview {
+    width: min(100%, 224px);
+    margin-left: 54px;
+    padding: 8px;
   }
 
   .box-art::before {

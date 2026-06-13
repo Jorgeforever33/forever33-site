@@ -168,22 +168,35 @@ Notas:
 - No generar imágenes nuevas.
 - No inventar capturas.
 - `login.png` no debe mostrarse en la landing principal.
-- La sección de documentos usa tarjetas de texto para evitar repetir capturas de otros módulos.
+- Las capturas actuales son reales del sistema F33 POS.
+- No reemplazar estas capturas por imágenes generadas ni placeholders.
+- La sección de documentos usa previews reales de salidas comerciales.
 
 Capturas principales actuales:
 
 ```text
-assets/captures/hero-pos-desktop.png
-assets/captures/hero-pos-mobile.png
-assets/captures/showcase-pos.png
-assets/captures/showcase-productos.png
-assets/captures/showcase-precios.png
-assets/captures/showcase-reportes.png
-assets/captures/showcase-clientes.png
-assets/captures/showcase-exportadores.png
-assets/captures/mobile-pos.png
-assets/captures/mobile-stock.png
-assets/captures/mobile-catalogo.png
+assets/captures/pos-mostrador.png
+assets/captures/dashboard-inicio.png
+assets/captures/productos-stock.png
+assets/captures/precios.png
+assets/captures/caja.png
+assets/captures/compras.png
+assets/captures/clientes.png
+assets/captures/reportes.png
+assets/captures/catalogo.png
+assets/captures/exportador-comercial.png
+assets/captures/lista-comercial-exportada.png
+assets/captures/pedidos-comerciales.png
+assets/captures/configuracion.png
+assets/captures/launcher.png
+assets/captures/inicio-mobile.png
+assets/captures/pos-mobile.png
+```
+
+Asset disponible pero no visible en landing:
+
+```text
+assets/captures/login.png
 ```
 
 ## Contacto y redes
