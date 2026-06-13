@@ -1,7 +1,7 @@
 const CONTACT = {
   whatsappNumber: "5491151275465",
   whatsappMessage:
-    "Hola, quiero consultar por F33 POS para ferreterías y distribuidoras.",
+    "Hola, quiero consultar por F33 POS para mi negocio.",
 };
 
 const navToggle = document.querySelector(".nav-toggle");

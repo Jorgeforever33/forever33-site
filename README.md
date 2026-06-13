@@ -18,46 +18,55 @@ https://forever33systems.com/
 - Redes oficiales visibles en contacto y footer:
   - YouTube: `https://www.youtube.com/@Forever33systems`
   - Instagram: `https://www.instagram.com/forever33308/`
-- No hay backend, login/registro, pagos online, precios publicados ni descarga real en esta etapa.
+- No hay backend, login/registro, pagos online, precios publicados, formulario ni descarga real en esta etapa.
 
 ## Posicionamiento actual
 
 - La marca/empresa de la web es **Forever33 Systems**.
 - El producto principal es **F33 POS**.
-- La variante comunicada es **F33 POS local para ferreterías y distribuidoras**.
-- Mensaje principal actual:
+- El posicionamiento principal es **F33 POS local para comercios y negocios**.
+- F33 POS se comunica como una base local de gestión comercial para comercios, locales y negocios que necesitan ordenar ventas, stock, caja, clientes, compras, reportes y catálogo desde una PC principal.
+- Ferreterías, kioscos y distribuidoras son ejemplos de rubros posibles, no la identidad principal del producto.
+
+Mensaje principal actual:
 
 ```text
-F33 POS local para ferreterías y distribuidoras.
-Versión funcional disponible para demo/piloto asistido.
+F33 POS local para comercios y negocios.
+Sistema local para ordenar ventas, stock, caja, clientes, compras, reportes y catálogo desde una PC principal.
 ```
 
-- La landing debe sonar como una versión local demostrable y lista para piloto inicial, sin prometer sistema final perfecto.
-- Se permite comunicar:
-  - versión local funcional
-  - demo/piloto asistido
-  - instalación local asistida en Windows
-  - base limpia disponible para instalación inicial
-  - licencia local/manual
-  - soporte directo por WhatsApp
-  - presupuesto adaptable
-  - funciones adicionales si el comercio las necesita
+La landing debe sonar como una versión local demostrable y lista para demo/piloto asistido, sin prometer sistema final perfecto.
+
+Se permite comunicar:
+
+- Base general para comercios, locales y negocios.
+- Demo con productos cargados.
+- Base limpia para uso real.
+- Instalación local asistida en Windows.
+- Activación local por código F33-ACT.
+- Soporte directo por WhatsApp.
+- Presupuesto adaptable.
+- Funciones adicionales si el comercio las necesita.
 
 ## Estado del producto
 
 - F33 POS cuenta con una versión local funcional para demo/piloto asistido.
-- La instalación actual es asistida y requiere configuración inicial.
-- No se comunica descarga pública autoservicio todavía.
-- No se comunica instalador MSI automático todavía.
-- No se comunica servicio Windows todavía.
-- La activación comercial se comunica como licencia local/manual.
-- La renovación y el soporte se gestionan por WhatsApp.
+- La instalación se comunica como instalación local asistida en Windows.
+- Desde el instalador se puede elegir entre:
+  - **F33 POS Demo**: trae productos cargados y sirve para probar o mostrar el sistema.
+  - **F33 POS Base**: instalación limpia para cargar datos reales del negocio.
+- F33 POS requiere Node.js instalado en Windows.
+- El instalador no incluye ni descarga Node.js; si falta, el sistema muestra el aviso y guía al usuario a la página oficial.
+- No se ofrece descarga pública autoservicio en la landing actual.
+- La activación comercial se comunica como **activación local por código F33-ACT**.
+- Cada instalación genera un `InstallationID` y soporte entrega la clave correspondiente.
+- La activación, renovación y asistencia se coordinan por WhatsApp.
 
 ## Aclaración fiscal
 
-- F33 no incluye facturación fiscal en esta etapa.
+- F33 POS no incluye facturación fiscal, AFIP, CAE ni factura electrónica en esta etapa.
 - El sistema puede generar comprobantes comerciales internos no fiscales.
-- No reemplaza factura fiscal, AFIP, CAE ni facturación electrónica.
+- No reemplaza la facturación fiscal.
 - Esta aclaración debe mantenerse visible en la landing y en FAQ.
 
 ## Funciones actuales comunicadas
@@ -66,21 +75,21 @@ Versión funcional disponible para demo/piloto asistido.
 - Caja.
 - Productos y stock.
 - Compras y proveedores.
-- Clientes y mayoristas.
+- Clientes, listas y cuentas.
 - Catálogo comercial.
 - PDF comercial con estilos.
 - Comprobante A4 no fiscal.
-- Reportes industriales.
+- Reportes comerciales.
 - Acceso móvil por red local.
 - Imagen para Estado de WhatsApp.
 - Vista cliente para segundo monitor.
 - Backups y cierre seguro.
-- Licencia local.
+- Activación F33-ACT.
 
 ## Estructura actual de la landing
 
 - Header con logo de Forever33 Systems.
-- Hero: F33 POS local para ferreterías y distribuidoras.
+- Hero: F33 POS local para comercios y negocios.
 - CTAs:
   - Solicitar demo
   - Ver funciones
@@ -101,9 +110,9 @@ Versión funcional disponible para demo/piloto asistido.
   - Reportes
   - A medida
 - Funciones principales con grilla de módulos.
-- Cómo funciona: coordinar, instalar, activar.
+- Cómo funciona: elegir Demo/Base, instalar, activar.
 - Instalación local asistida en Windows.
-- Licencia local con activación manual.
+- Activación local por código F33-ACT.
 - Qué incluye / aclaración fiscal.
 - FAQ.
 - Contacto por WhatsApp, email y redes.
@@ -113,7 +122,6 @@ Versión funcional disponible para demo/piloto asistido.
 
 - La web usa la marca principal: **Forever33 Systems**.
 - El programa/producto usa la marca: **F33 POS**.
-- Variante del producto: **Ferreterías y Distribuidoras**.
 - Identidades separadas:
   - Forever33 Systems = empresa / web
   - F33 POS = producto / programa
@@ -160,7 +168,7 @@ Notas:
 - No generar imágenes nuevas.
 - No inventar capturas.
 - `login.png` no debe mostrarse en la landing principal.
-- La sección de documentos ya no repite capturas de otros módulos; usa tarjetas de texto para evitar confusión visual.
+- La sección de documentos usa tarjetas de texto para evitar repetir capturas de otros módulos.
 
 Capturas principales actuales:
 
@@ -178,17 +186,6 @@ assets/captures/mobile-stock.png
 assets/captures/mobile-catalogo.png
 ```
 
-Hooks en `index.html` para reemplazo rápido:
-
-- Hero:
-  - `hero-main-preview`
-- Showcase desktop:
-  - `showcase-image--desktop`
-  - `data-showcase-desktop`
-- Showcase mobile:
-  - `showcase-image--mobile`
-  - `data-showcase-mobile`
-
 ## Contacto y redes
 
 - WhatsApp:
@@ -200,7 +197,7 @@ Hooks en `index.html` para reemplazo rápido:
 - URL esperada para CTAs:
 
 ```text
-https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20ferreter%C3%ADas%20y%20distribuidoras.
+https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio.
 ```
 
 - Email:
@@ -234,13 +231,13 @@ https://forever33systems.com/
 - Title actual:
 
 ```text
-F33 POS local para ferreterías y distribuidoras | Forever33 Systems
+F33 POS local para comercios y negocios | Forever33 Systems
 ```
 
 - Meta description actual:
 
 ```text
-F33 POS local para ferreterías y distribuidoras: ventas, stock, caja, compras, clientes, proveedores, catálogo comercial, reportes y demo/piloto asistido.
+F33 POS local para comercios y negocios: ventas, stock, caja, compras, clientes, proveedores, catálogo comercial, reportes, demo y activación asistida.
 ```
 
 - Imagen OG actual:
@@ -258,10 +255,24 @@ https://forever33systems.com/assets/forever33-og-image.png
   - Twitter Card
   - JSON-LD con `Organization` y `SoftwareApplication`
   - `sameAs` para YouTube e Instagram
-  - `sitemap.xml` con `lastmod` actualizado a `2026-06-08`
+  - `sitemap.xml`
   - `robots.txt` apunta al sitemap
 - El usuario indicó que ya hizo los pasos de Google Search Console. Google puede tardar en verificar e indexar.
 - No agregar `noindex`.
+
+## JSON-LD esperado
+
+- `Organization`:
+  - nombre: Forever33 Systems
+  - email: `mailto:jorgeforever33@gmail.com`
+  - teléfono: `+5491151275465`
+  - redes oficiales en `sameAs`
+- `SoftwareApplication`:
+  - name: F33 POS
+  - applicationCategory: BusinessApplication
+  - operatingSystem: Windows
+  - audience: comercios, locales, negocios, ferreterías, kioscos y distribuidoras
+  - softwareRequirements: Windows con Node.js instalado; instalación local asistida.
 
 ## Reglas permanentes del proyecto
 
@@ -270,15 +281,19 @@ https://forever33systems.com/assets/forever33-og-image.png
 - No agregar pagos online.
 - No agregar precios publicados.
 - No agregar descarga real.
+- No agregar formulario.
 - No prometer producto final perfecto.
 - No prometer facturación fiscal.
-- No agregar enlaces a:
-  - `http://localhost:5180/pos`
-  - `api.forever33systems.com`
-  - `app.forever33systems.com`
+- No prometer AFIP.
+- No prometer CAE.
+- No prometer factura electrónica.
+- No prometer descarga pública autoservicio.
+- No agregar enlaces a localhost, API o app web no publicados.
 - Mantener WhatsApp en `5491151275465`.
+- Mantener email en `jorgeforever33@gmail.com`.
 - Mantener tono comercial claro y argentino neutro.
-- Usar siempre **distribuidoras**, nunca **distruibuidoras**.
+- Ferreterías, kioscos y distribuidoras pueden aparecer como ejemplos de rubros posibles.
+- Usar siempre **distribuidoras** correctamente escrito.
 
 ## Restricciones técnicas
 
@@ -323,15 +338,17 @@ https://forever33-site.pages.dev/
 - [x] JS carga correctamente.
 - [x] Imágenes cargan correctamente.
 - [x] WhatsApp funciona con el número configurado.
+- [x] WhatsApp usa el texto nuevo para "mi negocio".
 - [x] Email visible funciona con `mailto`.
 - [x] Redes sociales visibles y declaradas en JSON-LD.
 - [x] Menú mobile funciona.
 - [x] Tabs funcionan.
 - [x] FAQ funciona.
-- [x] No hay enlaces prohibidos.
-- [x] No aparece `distruibuidoras`.
+- [x] No hay enlaces prohibidos en la landing.
+- [x] No aparece la variante mal escrita de `distribuidoras`.
 - [x] No aparece login/registro.
 - [x] Aclaración fiscal visible.
+- [x] Node.js queda explicado como requisito externo.
 - [x] Sitemap correcto.
 - [x] Robots correcto.
 - [x] HTTPS activo en dominio final.
