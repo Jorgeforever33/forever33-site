@@ -37,11 +37,12 @@ Sistema local para ordenar ventas, stock, caja, clientes, compras, reportes y ca
 
 La landing debe sonar como una versión local demostrable y lista para demo/piloto asistido, sin prometer sistema final perfecto.
 
-## Rediseño claro premium implementado
+## Rediseño claro premium con densidad de referencia
 
 Revision local realizada sobre la landing:
 
 - Hero claro premium: comunica F33 POS local para comercios y negocios, con `F33` destacado en verde y captura real principal.
+- La composición toma la referencia visual como guía de densidad: módulos arriba, beneficios compactos, navegación simple y menos aire de landing tradicional.
 - `login.png` esta copiada como asset disponible, pero no se muestra en la landing.
 - WhatsApp conserva `5491151275465` y el texto para consultar por "mi negocio".
 - No se detectaron enlaces prohibidos a localhost, API o app web.
@@ -54,7 +55,8 @@ Cambios visuales aplicados:
 - Hero con texto a la izquierda y captura real `pos-mostrador.png` a la derecha dentro de un marco de producto hecho con CSS.
 - Captura movil real integrada como apoyo secundario, sin tapar informacion importante.
 - Franja compacta de beneficios: instalacion, activacion F33-ACT, acceso movil, soporte, Demo/Base y presupuesto adaptable.
-- Seccion `Modulos y funciones principales` con grilla compacta de diez cards visuales y mini capturas reales.
+- Seccion `Modulos y funciones principales` subida inmediatamente despues del hero, con grilla compacta de diez cards visuales y mini capturas reales.
+- La navegacion principal queda alineada a la referencia: Inicio, Funciones, Como funciona, FAQ y Contacto.
 - Se redujo la duplicacion entre productos, showcase y funciones para que las capturas reales sean protagonistas.
 - CTA final fuerte: `Proba F33 POS y transforma tu negocio`.
 
@@ -122,17 +124,6 @@ Se permite comunicar:
   - Soporte por WhatsApp
   - Demo o Base limpia
   - Presupuesto adaptable
-- Productos:
-  - F33 POS como producto principal
-  - presupuesto adaptable
-  - funciones a medida como posibilidad futura, sin quitar foco al POS
-- Showcase con capturas reales:
-  - POS
-  - Productos
-  - Precios
-  - Reportes
-  - Clientes
-  - Exportadores
 - Modulos y funciones principales con grilla compacta:
   - POS de mostrador
   - Productos y stock
@@ -145,6 +136,14 @@ Se permite comunicar:
   - Pedido Excel
   - Vista cliente
 - Cómo funciona: elegir Demo/Base, instalar, activar.
+- Showcase con capturas reales:
+  - POS
+  - Productos
+  - Precios
+  - Reportes
+  - Clientes
+  - Exportadores
+- Productos/adaptaciones como bloque secundario, por debajo de funciones y capturas.
 - Instalación local asistida en Windows.
 - Activación local por código F33-ACT.
 - Qué incluye / aclaración fiscal.
@@ -411,18 +410,19 @@ No se borran sin confirmación explícita. Quedan como candidatos a limpiar más
 
 ## Plan de mejora de landing
 
-Implementado en el rediseño claro premium:
+Implementado en el rediseño claro premium con densidad de referencia:
 
 1. Hero mas fuerte con `pos-mostrador.png` como captura principal y apoyo movil real integrado.
 2. Enfasis verde en `F33` dentro del titulo principal.
 3. Franja compacta de beneficios debajo del hero.
-4. Productos reorganizados para que F33 POS sea el foco principal.
-5. Showcase con tabs y capturas reales.
-6. Grilla compacta `Modulos y funciones principales` con diez cards visuales.
-7. Secciones comerciales necesarias: como funciona, instalacion local, licencia, aclaracion fiscal, FAQ y CTA final.
-8. WebP + PNG fallback para capturas visibles.
-9. WhatsApp dentro del menu mobile.
-10. Sin backend, login, pagos, precios publicados, formulario ni descarga real.
+4. Modulos visibles inmediatamente despues del hero, no debajo de una seccion larga de productos.
+5. Navegacion principal: Inicio, Funciones, Como funciona, FAQ y Contacto.
+6. Showcase con tabs y capturas reales ubicado como bloque secundario.
+7. Grilla compacta `Modulos y funciones principales` con diez cards visuales.
+8. Secciones comerciales necesarias: como funciona, instalacion local, licencia, aclaracion fiscal, FAQ y CTA final.
+9. WebP + PNG fallback para capturas visibles.
+10. WhatsApp dentro del menu mobile.
+11. Sin backend, login, pagos, precios publicados, formulario ni descarga real.
 
 Pendiente posible para futuras iteraciones:
 
