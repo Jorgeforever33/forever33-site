@@ -58,6 +58,8 @@ Cambios visuales aplicados:
 - Seccion `Modulos y funciones principales` subida inmediatamente despues del hero, con grilla compacta de diez cards visuales y mini capturas reales.
 - La navegacion principal queda alineada a la referencia: Inicio, Funciones, Como funciona, FAQ y Contacto.
 - Se redujo la duplicacion entre productos, showcase y funciones para que las capturas reales sean protagonistas.
+- Segunda pasada de densidad visual: se compactaron Como funciona, Vista del producto, Instalacion, Licencia, Que incluye y FAQ para evitar bloques vacios o aspecto de plantilla editable.
+- El bloque secundario de Productos queda oculto visualmente porque repetia el mensaje de los modulos; la adaptacion al negocio y presupuesto se comunica en hero, modulos, licencia y FAQ.
 - CTA final fuerte: `Proba F33 POS y transforma tu negocio`.
 
 Se permite comunicar:
