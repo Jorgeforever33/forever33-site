@@ -37,6 +37,26 @@ Sistema local para ordenar ventas, stock, caja, clientes, compras, reportes y ca
 
 La landing debe sonar como una versión local demostrable y lista para demo/piloto asistido, sin prometer sistema final perfecto.
 
+## Auditoria visual y plan de mejora aprobado
+
+Revision local realizada sobre la landing:
+
+- Hero correcto: comunica F33 POS local para comercios y negocios y muestra capturas reales.
+- `login.png` esta copiada como asset disponible, pero no se muestra en la landing.
+- WhatsApp conserva `5491151275465` y el texto para consultar por "mi negocio".
+- No se detectaron enlaces prohibidos a localhost, API o app web.
+- No aparece la variante mal escrita de "distribuidoras".
+- Tabs, FAQ y menu mobile funcionan.
+- Desktop y mobile no muestran overflow horizontal.
+
+Mejoras priorizadas:
+
+- Reducir el peso visual de los bloques "Proximamente" en la parte alta.
+- Reforzar F33 POS como producto real disponible para demo/piloto asistido.
+- Usar mas capturas reales disponibles: caja, compras, catalogo, dashboard y configuracion.
+- Agregar un mensaje claro de adaptacion: presupuesto flexible y posibilidad de sumar funciones necesarias segun el negocio.
+- Mantener las reglas: sin backend, sin login, sin pagos, sin precios publicados y sin descarga real.
+
 Se permite comunicar:
 
 - Base general para comercios, locales y negocios.
@@ -96,7 +116,8 @@ Se permite comunicar:
   - Consultar instalación
 - Productos:
   - F33 POS como producto principal
-  - bloques "Próximamente" debajo, sin quitar foco al POS
+  - presupuesto adaptable
+  - funciones a medida como posibilidad futura, sin quitar foco al POS
 - Showcase con capturas reales:
   - POS
   - Productos
@@ -109,12 +130,19 @@ Se permite comunicar:
   - Pedido Excel
   - Reportes
   - A medida
+- Módulos reales:
+  - Caja
+  - Compras
+  - Dashboard / inicio
+  - Catálogo
+  - Configuración / soporte
 - Funciones principales con grilla de módulos.
 - Cómo funciona: elegir Demo/Base, instalar, activar.
 - Instalación local asistida en Windows.
 - Activación local por código F33-ACT.
 - Qué incluye / aclaración fiscal.
 - FAQ.
+- CTA suave despues de FAQ para consultar Demo/Base/adaptacion.
 - Contacto por WhatsApp, email y redes.
 - Footer con marca, navegación, producto, contacto y redes.
 
@@ -164,6 +192,11 @@ Notas:
 ## Imágenes y capturas
 
 - La landing usa capturas reales del sistema en `assets/captures/`.
+- Las capturas visibles tienen derivados WebP en `assets/captures/webp/` para mejorar carga.
+- El HTML usa `<picture>` con WebP y fallback PNG.
+- Las imágenes visibles declaran `width` y `height` para reducir saltos de layout.
+- El CSS mantiene `height: auto` en capturas y logos con dimensiones declaradas para evitar deformaciones.
+- La burbuja flotante de WhatsApp se reduce en mobile para no tapar capturas ni CTAs.
 - No usar imágenes externas.
 - No generar imágenes nuevas.
 - No inventar capturas.
@@ -171,6 +204,29 @@ Notas:
 - Las capturas actuales son reales del sistema F33 POS.
 - No reemplazar estas capturas por imágenes generadas ni placeholders.
 - La sección de documentos usa previews reales de salidas comerciales.
+
+Capturas visibles actualmente en la landing:
+
+```text
+assets/captures/pos-mostrador.png
+assets/captures/pos-mobile.png
+assets/captures/inicio-mobile.png
+assets/captures/productos-stock.png
+assets/captures/precios.png
+assets/captures/reportes.png
+assets/captures/clientes.png
+assets/captures/exportador-comercial.png
+assets/captures/lista-comercial-exportada.png
+assets/captures/pedidos-comerciales.png
+assets/captures/launcher.png
+assets/captures/dashboard-inicio.png
+assets/captures/caja.png
+assets/captures/compras.png
+assets/captures/catalogo.png
+assets/captures/configuracion.png
+```
+
+El hero usa la captura desktop del POS y una vista movil real como apoyo secundario. El mockup movil debe mantenerse chico, con marco liviano y sin tapar informacion importante de la captura principal. Las ultimas cinco capturas se usan en la seccion visual de modulos reales.
 
 Capturas principales actuales:
 
@@ -193,11 +249,33 @@ assets/captures/inicio-mobile.png
 assets/captures/pos-mobile.png
 ```
 
-Asset disponible pero no visible en landing:
+Assets disponibles pero no visibles en landing:
 
 ```text
 assets/captures/login.png
 ```
+
+`login.png` queda disponible como asset, pero no se muestra en la landing principal para no sugerir login, registro, panel online ni acceso web. `inicio-mobile.png` si puede mostrarse en el hero o secciones moviles cuando el encuadre se vea profesional.
+
+Capturas legacy/no referenciadas por la landing actual:
+
+```text
+assets/captures/_legacy/document-lista-pdf.png
+assets/captures/_legacy/document-pedido-excel.png
+assets/captures/_legacy/hero-pos-desktop.png
+assets/captures/_legacy/hero-pos-mobile.png
+assets/captures/_legacy/mobile-catalogo.png
+assets/captures/_legacy/mobile-pos.png
+assets/captures/_legacy/mobile-stock.png
+assets/captures/_legacy/showcase-clientes.png
+assets/captures/_legacy/showcase-exportadores.png
+assets/captures/_legacy/showcase-pos.png
+assets/captures/_legacy/showcase-precios.png
+assets/captures/_legacy/showcase-productos.png
+assets/captures/_legacy/showcase-reportes.png
+```
+
+No borrar assets legacy sin confirmacion explicita.
 
 ## Contacto y redes
 
@@ -266,7 +344,7 @@ https://forever33systems.com/assets/forever33-og-image.png
   - `hreflang` `x-default`
   - Open Graph
   - Twitter Card
-  - JSON-LD con `Organization` y `SoftwareApplication`
+  - JSON-LD con `Organization`, `SoftwareApplication` y `FAQPage`
   - `sameAs` para YouTube e Instagram
   - `sitemap.xml`
   - `robots.txt` apunta al sitemap
@@ -323,6 +401,27 @@ https://forever33systems.com/assets/forever33-og-image.png
 - `captures/`
 
 No se borran sin confirmación explícita. Quedan como candidatos a limpiar más adelante.
+
+## Plan de mejora de landing
+
+Orden recomendado:
+
+1. Mantener el hero con `pos-mostrador.png` como captura principal, sin mockup móvil superpuesto.
+2. Convertir la zona de productos en una presentacion mas fuerte de F33 POS y bajar "Proximamente" a una nota secundaria.
+3. Mantener la seccion visual de modulos reales con:
+   - `caja.png`
+   - `compras.png`
+   - `dashboard-inicio.png`
+   - `catalogo.png`
+   - `configuracion.png` si aporta a instalacion, soporte o activacion.
+4. Reforzar el texto comercial:
+   - presupuesto adaptable al tipo de negocio;
+   - funciones adicionales segun necesidad real del negocio;
+   - soporte directo por WhatsApp.
+5. Mantener CTA de WhatsApp dentro del menu mobile.
+6. Mantener visible la aclaracion fiscal y no publicar precios.
+7. Mantener WebP + PNG fallback para las capturas visibles.
+8. Verificar desktop, mobile, tabs, FAQ, menu mobile, WhatsApp, email y ausencia de enlaces prohibidos.
 
 ## Publicación en Cloudflare Pages
 

@@ -39,7 +39,7 @@
     <meta name="twitter:image:alt" content="F33 POS local para comercios y negocios de Forever33 Systems" />
     <link rel="icon" href="./assets/brand/forever33-icon.png" type="image/png" />
     <link rel="preload" href="./assets/brand/forever33-logo-horizontal.png" as="image" />
-    <link rel="stylesheet" href="./styles.css?v=20260613-captures" />
+    <link rel="stylesheet" href="./styles.css?v=20260620-hero-mobile-fix" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -94,6 +94,84 @@
               "Base limpia para uso real",
               "Activación local por código F33-ACT"
             ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://forever33systems.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Funciona sin internet?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. El sistema está pensado para trabajar de forma local en la PC principal del comercio o negocio. Algunas funciones futuras podrían requerir internet, pero el uso principal del POS no depende de estar conectado."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Sirve solo para ferreterías?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. F33 POS es una base general para comercios. Puede adaptarse a distintos rubros como ferreterías, kioscos, distribuidoras u otros negocios personalizados."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué diferencia hay entre Demo y Base?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La Demo trae productos cargados para probar y mostrar el sistema. La Base viene limpia para usar con datos reales del negocio."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Se puede usar desde celulares?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. La idea es que el sistema corra en la PC principal y que otros dispositivos, como celulares o tablets, puedan acceder dentro de la misma red local del negocio."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo se activa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Se activa con un código F33-ACT generado para la instalación del cliente. Cada instalación genera un InstallationID y soporte entrega la clave correspondiente."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Instala Node.js?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Node.js es un requisito externo. Si falta, F33 POS muestra el aviso y permite ir a la página oficial para instalarlo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Incluye facturación fiscal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "F33 POS no incluye facturación fiscal, AFIP, CAE ni factura electrónica en esta etapa. El sistema puede generar comprobantes comerciales internos no fiscales, pero no reemplaza la facturación fiscal."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Se puede adaptar al presupuesto?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Revisamos el caso por WhatsApp, buscamos una propuesta acorde al presupuesto y podemos sumar funciones si el comercio realmente las necesita."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Incluye soporte?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. El contacto principal será por WhatsApp para consultas, instalación, activación y acompañamiento inicial."
+                }
+              }
+            ]
           }
         ]
       }
@@ -103,7 +181,7 @@
     <header class="site-header" id="inicio">
       <nav class="nav shell" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="Forever33 Systems inicio">
-          <img src="./assets/brand/forever33-logo-horizontal.png" alt="Forever33 Systems" decoding="async" />
+          <img src="./assets/brand/forever33-logo-horizontal.png" alt="Forever33 Systems" width="1111" height="349" decoding="async" />
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
@@ -118,6 +196,7 @@
           <a href="#productos">Productos</a>
           <a href="#soluciones">Soluciones</a>
           <a href="#contacto">Contacto</a>
+          <a class="nav-menu-whatsapp" href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>Consultar por WhatsApp</a>
         </div>
 
         <a class="button button-whatsapp nav-cta" href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>
@@ -141,10 +220,11 @@
             </p>
 
             <ul class="trust-list" aria-label="Beneficios principales">
-              <li>Base general para comercios, locales y negocios</li>
+              <li>Base adaptable para comercios, locales y negocios</li>
               <li>Demo con productos o Base limpia para uso real</li>
               <li>Instalación asistida en Windows</li>
               <li>Activación local por código F33-ACT</li>
+              <li>Nos adaptamos al presupuesto y al tipo de negocio</li>
             </ul>
 
             <div class="hero-actions">
@@ -163,7 +243,7 @@
                 </svg>
               </a>
               <a class="button button-secondary" href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>
-                Consultar instalación
+                Consultar por mi negocio
               </a>
             </div>
           </div>
@@ -178,32 +258,45 @@
                   <strong>F33 POS Comercios y negocios</strong>
                 </div>
                 <!-- Reemplazo para screenshot principal -->
-                <img
-                  class="hero-main-preview"
-                  src="./assets/captures/pos-mostrador.png"
-                  alt="Pantalla de venta de F33 POS para comercios y negocios"
-                  data-asset="hero-desktop"
-                  loading="eager"
-                  decoding="async"
-                />
-                <figcaption>Vista real del POS para mostrador.</figcaption>
-              </figure>
-
-              <div class="local-link" aria-hidden="true">
-                <span></span>
-                <strong>Red local</strong>
-              </div>
-
-              <div class="phone-mockup" aria-label="Vista del POS desde un móvil conectado a la red local">
-                <div class="phone-screen">
+                <picture class="capture-picture">
+                  <source srcset="./assets/captures/webp/pos-mostrador.webp" type="image/webp" />
                   <img
-                    src="./assets/captures/inicio-mobile.png"
-                    alt="Panel de inicio móvil de F33 POS"
-                    data-asset="hero-mobile"
+                    class="hero-main-preview"
+                    src="./assets/captures/pos-mostrador.png"
+                    alt="Pantalla de venta de F33 POS para comercios y negocios"
+                    width="1919"
+                    height="1058"
+                    data-asset="hero-desktop"
                     loading="eager"
                     decoding="async"
                   />
+                </picture>
+                <figcaption>Vista real del POS para mostrador.</figcaption>
+              </figure>
+
+              <div class="hero-mobile-preview" aria-label="Vista móvil real de F33 POS en red local">
+                <span class="hero-mobile-label">Móvil por red local</span>
+                <div class="hero-mobile-frame">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/inicio-mobile.webp" type="image/webp" />
+                    <img
+                      class="hero-mobile-image"
+                      src="./assets/captures/inicio-mobile.png"
+                      alt="Panel de inicio móvil de F33 POS"
+                      width="547"
+                      height="731"
+                      data-asset="hero-mobile"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
+              </div>
+
+              <div class="hero-capabilities" aria-label="Capacidades de instalación local">
+                <span>PC principal</span>
+                <span>Red local</span>
+                <span>Acceso móvil</span>
               </div>
             </div>
           </div>
@@ -242,21 +335,21 @@
               <a href="#f33-pos">Conocer F33 POS</a>
             </article>
 
-            <article class="product-card soon">
-              <div class="card-icon muted">
+            <article class="product-card adaptive">
+              <div class="card-icon accent">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
-                  <path d="M12 12 4 7.5" />
-                  <path d="M12 12v9" />
-                  <path d="m12 12 8-4.5" />
+                  <path d="M4 12a8 8 0 0 1 14.9-4" />
+                  <path d="M19 4v4h-4" />
+                  <path d="M20 12a8 8 0 0 1-14.9 4" />
+                  <path d="M5 20v-4h4" />
                 </svg>
               </div>
-              <h3>Próximamente</h3>
-              <p>Más herramientas comerciales podrán sumarse después de consolidar F33 POS.</p>
-              <span>Más adelante</span>
+              <h3>Adaptable a tu presupuesto</h3>
+              <p>Priorizamos lo que tu negocio necesita primero: mostrador, caja, stock, clientes, reportes o catálogo.</p>
+              <a href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>Consulta directa</a>
             </article>
 
-            <article class="product-card soon">
+            <article class="product-card future">
               <div class="card-icon muted">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
@@ -265,8 +358,8 @@
                   <path d="m12 12 8-4.5" />
                 </svg>
               </div>
-              <h3>Próximamente</h3>
-              <p>Nuevas soluciones de gestión se evaluarán según necesidades reales de comercios.</p>
+              <h3>Adaptaciones según el negocio</h3>
+              <p>Si el comercio necesita algo puntual, se evalúa y se suma por prioridad sin cambiar el enfoque local de F33 POS.</p>
               <span>Más adelante</span>
             </article>
           </div>
@@ -279,8 +372,8 @@
             <span class="section-label">Vista del producto</span>
             <h2>Un sistema completo para operar y vender mejor</h2>
             <p>
-              Capturas reales de desarrollo de una base comercial para trabajar ventas, productos, precios, reportes,
-              clientes y exportadores desde PC y móviles.
+              Capturas reales del sistema para trabajar ventas, productos, precios, caja,
+              compras, catálogo, clientes, reportes y exportadores desde PC y móviles.
             </p>
           </div>
 
@@ -308,24 +401,34 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/pos-mostrador.png"
-                      alt="Pantalla de venta de F33 POS para comercios y negocios"
-                      data-showcase-desktop="pos"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/pos-mostrador.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/pos-mostrador.png"
+                        alt="Pantalla de venta de F33 POS para comercios y negocios"
+                        width="1919"
+                        height="1058"
+                        data-showcase-desktop="pos"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                   <figure class="showcase-phone">
-                    <img
-                      class="showcase-image showcase-image--mobile"
-                      src="./assets/captures/pos-mobile.png"
-                      alt="Pantalla móvil de venta de F33 POS"
-                      data-showcase-mobile="pos"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/pos-mobile.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--mobile"
+                        src="./assets/captures/pos-mobile.png"
+                        alt="Pantalla móvil de venta de F33 POS"
+                        width="545"
+                        height="713"
+                        data-showcase-mobile="pos"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -343,14 +446,19 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/productos-stock.png"
-                      alt="Módulo de productos y stock de F33 POS"
-                      data-showcase-desktop="productos"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/productos-stock.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/productos-stock.png"
+                        alt="Módulo de productos y stock de F33 POS"
+                        width="1919"
+                        height="1057"
+                        data-showcase-desktop="productos"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -368,14 +476,19 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/precios.png"
-                      alt="Módulo de precios de F33 POS"
-                      data-showcase-desktop="precios"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/precios.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/precios.png"
+                        alt="Módulo de precios de F33 POS"
+                        width="1919"
+                        height="1056"
+                        data-showcase-desktop="precios"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -393,14 +506,19 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/reportes.png"
-                      alt="Reportes comerciales de F33 POS"
-                      data-showcase-desktop="reportes"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/reportes.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/reportes.png"
+                        alt="Reportes comerciales de F33 POS"
+                        width="1919"
+                        height="1056"
+                        data-showcase-desktop="reportes"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -418,14 +536,19 @@
                 </div>
                 <div class="showcase-media single">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/clientes.png"
-                      alt="Módulo de clientes y cuenta corriente de F33 POS"
-                      data-showcase-desktop="clientes"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/clientes.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/clientes.png"
+                        alt="Módulo de clientes y cuenta corriente de F33 POS"
+                        width="1919"
+                        height="1060"
+                        data-showcase-desktop="clientes"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -443,14 +566,19 @@
                 </div>
                 <div class="showcase-media">
                   <figure class="showcase-frame">
-                    <img
-                      class="showcase-image showcase-image--desktop"
-                      src="./assets/captures/exportador-comercial.png"
-                      alt="Exportador comercial de F33 POS"
-                      data-showcase-desktop="exportadores"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture class="capture-picture">
+                      <source srcset="./assets/captures/webp/exportador-comercial.webp" type="image/webp" />
+                      <img
+                        class="showcase-image showcase-image--desktop"
+                        src="./assets/captures/exportador-comercial.png"
+                        alt="Exportador comercial de F33 POS"
+                        width="1919"
+                        height="1053"
+                        data-showcase-desktop="exportadores"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </figure>
                 </div>
               </article>
@@ -460,7 +588,10 @@
           <div class="document-showcase" aria-label="Salidas comerciales y ajustes previstos">
             <article class="document-card document-card--preview">
               <figure class="document-preview">
-                <img src="./assets/captures/lista-comercial-exportada.png" alt="Lista comercial exportada desde F33 POS" loading="lazy" decoding="async" />
+                <picture class="capture-picture">
+                  <source srcset="./assets/captures/webp/lista-comercial-exportada.webp" type="image/webp" />
+                  <img src="./assets/captures/lista-comercial-exportada.png" alt="Lista comercial exportada desde F33 POS" width="743" height="909" loading="lazy" decoding="async" />
+                </picture>
               </figure>
               <div>
                 <span class="document-label">Lista PDF</span>
@@ -476,7 +607,10 @@
 
             <article class="document-card document-card--preview">
               <figure class="document-preview">
-                <img src="./assets/captures/pedidos-comerciales.png" alt="Pedidos comerciales en F33 POS" loading="lazy" decoding="async" />
+                <picture class="capture-picture">
+                  <source srcset="./assets/captures/webp/pedidos-comerciales.webp" type="image/webp" />
+                  <img src="./assets/captures/pedidos-comerciales.png" alt="Pedidos comerciales en F33 POS" width="1918" height="1052" loading="lazy" decoding="async" />
+                </picture>
               </figure>
               <div>
                 <span class="document-label">Pedido Excel</span>
@@ -492,7 +626,10 @@
 
             <article class="document-card document-card--preview">
               <figure class="document-preview">
-                <img src="./assets/captures/reportes.png" alt="Reporte comercial exportado desde F33 POS" loading="lazy" decoding="async" />
+                <picture class="capture-picture">
+                  <source srcset="./assets/captures/webp/reportes.webp" type="image/webp" />
+                  <img src="./assets/captures/reportes.png" alt="Reporte comercial exportado desde F33 POS" width="1919" height="1056" loading="lazy" decoding="async" />
+                </picture>
               </figure>
               <div>
                 <span class="document-label">Reportes</span>
@@ -508,7 +645,10 @@
 
             <article class="document-card document-card--preview">
               <figure class="document-preview">
-                <img src="./assets/captures/exportador-comercial.png" alt="Exportador comercial de F33 POS" loading="lazy" decoding="async" />
+                <picture class="capture-picture">
+                  <source srcset="./assets/captures/webp/exportador-comercial.webp" type="image/webp" />
+                  <img src="./assets/captures/exportador-comercial.png" alt="Exportador comercial de F33 POS" width="1919" height="1053" loading="lazy" decoding="async" />
+                </picture>
               </figure>
               <div>
                 <span class="document-label">Exportador comercial</span>
@@ -521,6 +661,102 @@
                 <li>Información ordenada para compartir</li>
               </ul>
             </article>
+          </div>
+
+          <div class="module-gallery" aria-label="Módulos reales disponibles en F33 POS">
+            <div class="module-head">
+              <div>
+                <span class="section-label">Módulos reales</span>
+                <h3>Módulos reales para el trabajo diario</h3>
+              </div>
+              <p>
+                F33 POS puede arrancar por caja y compras, y crecer por prioridad con catálogo, configuración
+                y vistas generales según lo que necesite cada negocio.
+              </p>
+            </div>
+
+            <div class="module-grid">
+              <article class="module-card module-card--wide">
+                <figure class="module-preview">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/caja.webp" type="image/webp" />
+                    <img src="./assets/captures/caja.png" alt="Módulo de caja de F33 POS" width="1919" height="1057" loading="lazy" decoding="async" />
+                  </picture>
+                </figure>
+                <div class="module-copy">
+                  <span class="module-label">Caja</span>
+                  <h4>Caja clara para controlar el cierre diario</h4>
+                  <p>Movimientos de efectivo, ingresos, egresos y cierre del turno en una vista local pensada para trabajar con más orden.</p>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <figure class="module-preview">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/compras.webp" type="image/webp" />
+                    <img src="./assets/captures/compras.png" alt="Módulo de compras y proveedores de F33 POS" width="1919" height="1055" loading="lazy" decoding="async" />
+                  </picture>
+                </figure>
+                <div class="module-copy">
+                  <span class="module-label">Compras</span>
+                  <h4>Proveedores y reposición con trazabilidad</h4>
+                  <p>Una vista pensada para ordenar compras, movimientos y necesidades de reposición.</p>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <figure class="module-preview">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/dashboard-inicio.webp" type="image/webp" />
+                    <img src="./assets/captures/dashboard-inicio.png" alt="Panel de inicio de F33 POS para comercios y negocios" width="1919" height="1058" loading="lazy" decoding="async" />
+                  </picture>
+                </figure>
+                <div class="module-copy">
+                  <span class="module-label">Vista general</span>
+                  <h4>Inicio claro para abrir el sistema</h4>
+                  <p>Accesos y estado general para empezar el día desde una PC principal, sin depender de una plataforma online.</p>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <figure class="module-preview">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/catalogo.webp" type="image/webp" />
+                    <img src="./assets/captures/catalogo.png" alt="Catálogo comercial de F33 POS" width="1919" height="1057" loading="lazy" decoding="async" />
+                  </picture>
+                </figure>
+                <div class="module-copy">
+                  <span class="module-label">Catálogo</span>
+                  <h4>Productos para mostrar y compartir</h4>
+                  <p>Catálogo comercial para trabajar mejor con clientes, imágenes, precios y listas.</p>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <figure class="module-preview">
+                  <picture class="capture-picture">
+                    <source srcset="./assets/captures/webp/configuracion.webp" type="image/webp" />
+                    <img src="./assets/captures/configuracion.png" alt="Configuración y soporte de F33 POS" width="1918" height="1056" loading="lazy" decoding="async" />
+                  </picture>
+                </figure>
+                <div class="module-copy">
+                  <span class="module-label">Soporte</span>
+                  <h4>Ajustes y acompañamiento inicial</h4>
+                  <p>Configuración asistida para dejar la base preparada según el tipo de operación del comercio.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="module-note">
+              <p>Nos adaptamos al presupuesto y podemos sumar funciones si el comercio realmente las necesita.</p>
+              <a class="button button-whatsapp" href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L4 20.2l1.2-3.7A8.5 8.5 0 1 1 20.5 11.7Z" />
+                  <path d="M9.2 7.7c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.2 2.4.9 2.9.7 3.4.7.5 0 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.4l-1.9-.9c-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-.8-1.9Z" />
+                </svg>
+                Adaptar a mi negocio
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -718,7 +954,10 @@
           <div class="product-box product-box--screenshot" aria-label="Launcher de F33 POS para elegir Demo o Base">
             <span class="package-status">Demo/Base</span>
             <figure class="launcher-preview">
-              <img src="./assets/captures/launcher.png" alt="Launcher de F33 POS para iniciar Demo o Base" loading="lazy" decoding="async" />
+              <picture class="capture-picture">
+                <source srcset="./assets/captures/webp/launcher.webp" type="image/webp" />
+                <img src="./assets/captures/launcher.png" alt="Launcher de F33 POS para iniciar Demo o Base" width="708" height="752" loading="lazy" decoding="async" />
+              </picture>
             </figure>
           </div>
 
@@ -726,8 +965,8 @@
             <span class="section-label">Instalación local</span>
             <h2>Instalación local asistida en Windows</h2>
             <p>
-              F33 POS cuenta con un instalador unificado asistido para Windows. Desde el instalador podés elegir entre
-              una Demo con productos cargados o una Base limpia para uso real.
+              Instalación asistida, Demo con productos cargados o Base limpia para uso real, activación por código y
+              soporte directo para dejar F33 POS funcionando en una PC principal.
             </p>
             <p class="download-note">
               Node.js es un requisito externo: el instalador no lo incluye ni lo descarga. Si falta, F33 POS muestra el
@@ -866,6 +1105,17 @@
               <p>Sí. El contacto principal será por WhatsApp para consultas, instalación, activación y acompañamiento inicial.</p>
             </details>
           </div>
+
+          <div class="faq-cta">
+            <p>Contanos qué tipo de negocio tenés y vemos si conviene empezar con Demo, Base limpia o una adaptación puntual.</p>
+            <a class="button button-whatsapp" href="https://wa.me/5491151275465?text=Hola%2C%20quiero%20consultar%20por%20F33%20POS%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" data-whatsapp-link>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L4 20.2l1.2-3.7A8.5 8.5 0 1 1 20.5 11.7Z" />
+                <path d="M9.2 7.7c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.2 2.4.9 2.9.7 3.4.7.5 0 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.4l-1.9-.9c-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-.8-1.9Z" />
+              </svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
@@ -915,7 +1165,7 @@
     <footer class="footer">
       <div class="shell footer-grid">
         <div class="footer-brand">
-          <img src="./assets/brand/forever33-logo-horizontal.png" alt="Forever33 Systems" loading="lazy" decoding="async" />
+          <img src="./assets/brand/forever33-logo-horizontal.png" alt="Forever33 Systems" width="1111" height="349" loading="lazy" decoding="async" />
           <p>F33 POS local para comercios y negocios.</p>
           <span>Sistema local de gestión comercial para ventas, stock, caja, clientes, compras, reportes y catálogo.</span>
           <small>Argentina - Atención directa por WhatsApp</small>
@@ -930,7 +1180,7 @@
         <nav aria-label="Productos">
           <strong>Productos</strong>
           <a href="#f33-pos">F33 POS para comercios y negocios</a>
-          <a href="#productos">Próximamente</a>
+          <a href="#productos">Adaptaciones</a>
         </nav>
         <div class="footer-contact">
           <strong>Contacto</strong>
