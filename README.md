@@ -37,11 +37,11 @@ Sistema local para ordenar ventas, stock, caja, clientes, compras, reportes y ca
 
 La landing debe sonar como una versión local demostrable y lista para demo/piloto asistido, sin prometer sistema final perfecto.
 
-## Auditoria visual y plan de mejora aprobado
+## Rediseño claro premium implementado
 
 Revision local realizada sobre la landing:
 
-- Hero correcto: comunica F33 POS local para comercios y negocios y muestra capturas reales.
+- Hero claro premium: comunica F33 POS local para comercios y negocios, con `F33` destacado en verde y captura real principal.
 - `login.png` esta copiada como asset disponible, pero no se muestra en la landing.
 - WhatsApp conserva `5491151275465` y el texto para consultar por "mi negocio".
 - No se detectaron enlaces prohibidos a localhost, API o app web.
@@ -49,13 +49,14 @@ Revision local realizada sobre la landing:
 - Tabs, FAQ y menu mobile funcionan.
 - Desktop y mobile no muestran overflow horizontal.
 
-Mejoras priorizadas:
+Cambios visuales aplicados:
 
-- Reducir el peso visual de los bloques "Proximamente" en la parte alta.
-- Reforzar F33 POS como producto real disponible para demo/piloto asistido.
-- Usar mas capturas reales disponibles: caja, compras, catalogo, dashboard y configuracion.
-- Agregar un mensaje claro de adaptacion: presupuesto flexible y posibilidad de sumar funciones necesarias segun el negocio.
-- Mantener las reglas: sin backend, sin login, sin pagos, sin precios publicados y sin descarga real.
+- Hero con texto a la izquierda y captura real `pos-mostrador.png` a la derecha dentro de un marco de producto hecho con CSS.
+- Captura movil real integrada como apoyo secundario, sin tapar informacion importante.
+- Franja compacta de beneficios: instalacion, activacion F33-ACT, acceso movil, soporte, Demo/Base y presupuesto adaptable.
+- Seccion `Modulos y funciones principales` con grilla compacta de diez cards visuales y mini capturas reales.
+- Se redujo la duplicacion entre productos, showcase y funciones para que las capturas reales sean protagonistas.
+- CTA final fuerte: `Proba F33 POS y transforma tu negocio`.
 
 Se permite comunicar:
 
@@ -109,11 +110,18 @@ Se permite comunicar:
 ## Estructura actual de la landing
 
 - Header con logo de Forever33 Systems.
-- Hero: F33 POS local para comercios y negocios.
+- Hero claro premium: F33 POS local para comercios y negocios, captura real desktop y apoyo movil real.
 - CTAs:
   - Solicitar demo
   - Ver funciones
-  - Consultar instalación
+  - Consultar por WhatsApp
+- Franja compacta de beneficios:
+  - Instalacion asistida en Windows
+  - Activacion F33-ACT
+  - Acceso movil por red local
+  - Soporte por WhatsApp
+  - Demo o Base limpia
+  - Presupuesto adaptable
 - Productos:
   - F33 POS como producto principal
   - presupuesto adaptable
@@ -125,24 +133,23 @@ Se permite comunicar:
   - Reportes
   - Clientes
   - Exportadores
-- Bloque de salidas comerciales:
-  - Lista PDF
-  - Pedido Excel
-  - Reportes
-  - A medida
-- Módulos reales:
+- Modulos y funciones principales con grilla compacta:
+  - POS de mostrador
+  - Productos y stock
   - Caja
-  - Compras
-  - Dashboard / inicio
-  - Catálogo
-  - Configuración / soporte
-- Funciones principales con grilla de módulos.
+  - Compras y proveedores
+  - Clientes
+  - Reportes
+  - Catalogo comercial
+  - PDF comercial
+  - Pedido Excel
+  - Vista cliente
 - Cómo funciona: elegir Demo/Base, instalar, activar.
 - Instalación local asistida en Windows.
 - Activación local por código F33-ACT.
 - Qué incluye / aclaración fiscal.
 - FAQ.
-- CTA suave despues de FAQ para consultar Demo/Base/adaptacion.
+- CTA final fuerte para solicitar demo o consultar por WhatsApp.
 - Contacto por WhatsApp, email y redes.
 - Footer con marca, navegación, producto, contacto y redes.
 
@@ -203,7 +210,7 @@ Notas:
 - `login.png` no debe mostrarse en la landing principal.
 - Las capturas actuales son reales del sistema F33 POS.
 - No reemplazar estas capturas por imágenes generadas ni placeholders.
-- La sección de documentos usa previews reales de salidas comerciales.
+- Las salidas comerciales aparecen dentro de la grilla compacta de modulos cuando aportan contexto.
 
 Capturas visibles actualmente en la landing:
 
@@ -219,14 +226,12 @@ assets/captures/exportador-comercial.png
 assets/captures/lista-comercial-exportada.png
 assets/captures/pedidos-comerciales.png
 assets/captures/launcher.png
-assets/captures/dashboard-inicio.png
 assets/captures/caja.png
 assets/captures/compras.png
 assets/captures/catalogo.png
-assets/captures/configuracion.png
 ```
 
-El hero usa la captura desktop del POS y una vista movil real como apoyo secundario. El mockup movil debe mantenerse chico, con marco liviano y sin tapar informacion importante de la captura principal. Las ultimas cinco capturas se usan en la seccion visual de modulos reales.
+El hero usa la captura desktop del POS y una vista movil real como apoyo secundario. El mockup movil debe mantenerse chico, con marco liviano y sin tapar informacion importante de la captura principal. La grilla de modulos usa mini capturas reales cuando aportan contexto comercial.
 
 Capturas principales actuales:
 
@@ -253,6 +258,8 @@ Assets disponibles pero no visibles en landing:
 
 ```text
 assets/captures/login.png
+assets/captures/dashboard-inicio.png
+assets/captures/configuracion.png
 ```
 
 `login.png` queda disponible como asset, pero no se muestra en la landing principal para no sugerir login, registro, panel online ni acceso web. `inicio-mobile.png` si puede mostrarse en el hero o secciones moviles cuando el encuadre se vea profesional.
@@ -404,24 +411,24 @@ No se borran sin confirmación explícita. Quedan como candidatos a limpiar más
 
 ## Plan de mejora de landing
 
-Orden recomendado:
+Implementado en el rediseño claro premium:
 
-1. Mantener el hero con `pos-mostrador.png` como captura principal, sin mockup móvil superpuesto.
-2. Convertir la zona de productos en una presentacion mas fuerte de F33 POS y bajar "Proximamente" a una nota secundaria.
-3. Mantener la seccion visual de modulos reales con:
-   - `caja.png`
-   - `compras.png`
-   - `dashboard-inicio.png`
-   - `catalogo.png`
-   - `configuracion.png` si aporta a instalacion, soporte o activacion.
-4. Reforzar el texto comercial:
-   - presupuesto adaptable al tipo de negocio;
-   - funciones adicionales segun necesidad real del negocio;
-   - soporte directo por WhatsApp.
-5. Mantener CTA de WhatsApp dentro del menu mobile.
-6. Mantener visible la aclaracion fiscal y no publicar precios.
-7. Mantener WebP + PNG fallback para las capturas visibles.
-8. Verificar desktop, mobile, tabs, FAQ, menu mobile, WhatsApp, email y ausencia de enlaces prohibidos.
+1. Hero mas fuerte con `pos-mostrador.png` como captura principal y apoyo movil real integrado.
+2. Enfasis verde en `F33` dentro del titulo principal.
+3. Franja compacta de beneficios debajo del hero.
+4. Productos reorganizados para que F33 POS sea el foco principal.
+5. Showcase con tabs y capturas reales.
+6. Grilla compacta `Modulos y funciones principales` con diez cards visuales.
+7. Secciones comerciales necesarias: como funciona, instalacion local, licencia, aclaracion fiscal, FAQ y CTA final.
+8. WebP + PNG fallback para capturas visibles.
+9. WhatsApp dentro del menu mobile.
+10. Sin backend, login, pagos, precios publicados, formulario ni descarga real.
+
+Pendiente posible para futuras iteraciones:
+
+- Crear una imagen OG nueva aprobada cuando haya una pieza visual final de marca/producto.
+- Revisar si conviene sumar una mini seccion de casos por rubro sin volver a posicionar F33 POS solo para ferreterias.
+- Optimizar peso de capturas si el analisis de rendimiento lo pide.
 
 ## Publicación en Cloudflare Pages
 
